@@ -1,5 +1,13 @@
 # torsion_inf
 
+Magma code in this repository is meant to be run from `src/` working directory. Paths for `load` command in Magma are written relative to that path. 
+
+The `src/DT/` directory holds code that uses [CurveArith](https://github.com/nt-lib/CurveArith) (Derickx–Terao) to compute lower bounds on the gonality of modular curves $X_1(m, mn)$. To run all of these in parallel and save logs under `out/DT/`, use:
+
+```sh
+./scripts/run_DT.sh
+```
+
 To ensure this repository is as self-contained as possbile, we include copies of the necessary data (models for $X1(N)$, $X1(M, N)$) and third-party libraries in the `third-party` directory. This keeps the code functional even if the external sources become unavailable.
 
 ## Data Sources and Attribution
