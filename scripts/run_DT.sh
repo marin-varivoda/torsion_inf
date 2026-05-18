@@ -20,6 +20,11 @@ for name in \
 	gonality_X1_2_24 \
 	gonality_X1_2_26 \
 	gonality_X1_2_28 \
+	gonality_X1_3_15 \
+	gonality_X1_3_18 \
+	gonality_X1_4_16 \
+	gonality_X1_5_10 \
+	gonality_X1_6_12 \
 	gonality_lb_X1_2_30 \
 	gonality_lb_X1_2_32 \
 	gonality_lb_X1_2_34 \

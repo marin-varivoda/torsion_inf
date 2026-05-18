@@ -24,3 +24,5 @@ gonality := Gonality(C_fin);
 
 printf "Gonality for the curve X_1(%o, %o) reduced over a finite field of size %o is: %o\n", m, m*n, #res_field, gonality;
 printf "Total calculation time: %o seconds\n", Time(T);
+
+exit;
