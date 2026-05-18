@@ -1,0 +1,12 @@
+Magma V2.29-4     Mon May 18 2026 07:13:52 on mordell  [Seed = 2532736846]
+Type ? for help.  Type <Ctrl>-D to quit.
+
+Loading file "DT/gonality_X1_2_28.m"
+Loading "../third_party/DS17_X1MN_models/X1_2_28.txt"
+Initialized the model for X_1(2, 28) and reduced it over a finite field with 3 
+elements.
+Computing the exact gonality of X_1(2, 28)... (this might take a moment)
+Calculation complete. Gonality: 12
+Total calculation time: 1169.170 seconds
+
+Total time: 1169.180 seconds, Total memory usage: 436.22MB

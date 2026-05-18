@@ -1,0 +1,12 @@
+Magma V2.29-4     Mon May 18 2026 07:13:52 on mordell  [Seed = 2696956280]
+Type ? for help.  Type <Ctrl>-D to quit.
+
+Loading file "DT/gonality_lb_X1_41.m"
+Initialized the model for X_1(41) and reduced it over a finite field with 2 
+elements.
+Checking if reduced X_1(41) has a function of degree at most 9... (this might 
+take a moment)
+Calculation complete. Has a function of degree at most 9: false
+Total calculation time: 1311.430 seconds
+
+Total time: 1312.240 seconds, Total memory usage: 3237.66MB

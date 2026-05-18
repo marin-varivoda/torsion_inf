@@ -1,0 +1,12 @@
+Magma V2.29-4     Mon May 18 2026 07:13:52 on mordell  [Seed = 2865382258]
+Type ? for help.  Type <Ctrl>-D to quit.
+
+Loading file "DT/gonality_X1_5_10.m"
+Loading "../third_party/DS17_X1MN_models/X1_5_10.txt"
+Initialized the model for X_1(5, 10) and reduced it over a finite field with 11 
+elements.
+Calculating gonality... (this might take a moment)
+Gonality for the curve X_1(5, 10) reduced over a finite field of size 11 is: 3
+Total calculation time: 0.530 seconds
+
+Total time: 0.540 seconds, Total memory usage: 32.09MB
