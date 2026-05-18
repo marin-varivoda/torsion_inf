@@ -1,5 +1,3 @@
-//AttachSpec("../third_party/CurveArith/CurveArith.spec");
-
 /**
  * Constructs the congruence subgroup Gamma1(M, N), defined as the 
  * intersection of Gamma1(N) and the principal congruence subgroup Gamma(M).
