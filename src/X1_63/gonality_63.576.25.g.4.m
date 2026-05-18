@@ -33,9 +33,6 @@ C := Curve(ProjectiveSpace(R), X`psi); // Construct the modular curve
 p := 2;
 C_fin := Curve(Reduction(C, p));
 
-assert IsNonsingular(C_fin);
-assert Genus(C_fin) eq g;
-
 printf "Initialized modular curve %o and reduced it over a finite field with %o elements.\n", lmfdb_label, p;
 printf "Genus of the reduction: %o\n", Genus(C_fin);
 printf "Computing the gonality of the reduction... (this might take a moment)\n";

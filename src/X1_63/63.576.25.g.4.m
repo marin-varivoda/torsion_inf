@@ -18,9 +18,9 @@ bad_primes := [3, 7];
 // Genus
 g := 25;
 // Rank
-r := 0
-;// Exact gonality known
-gamma := None;
+r := 0;
+// Exact gonality known
+// gamma := None;
 
 // Modular data
 // Number of cusps
