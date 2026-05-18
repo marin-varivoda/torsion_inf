@@ -1,0 +1,13 @@
+m := 6;
+n := 1;
+g := 1;
+R<u,v>:=PolynomialRing(Rationals(),2);
+X := v^2 -u^3 - 1; // Elliptic curve 36a1
+a := u^2+2*u-v+1;
+b := u^3+2*u^2+u*v+u-v^2+v;
+c := u^3+3*u^2+3*u-v^2+1;
+t := a^2*b/(u*c^2);
+x := -v*(u+1)*a*b*(b-(u+1)^2+v)/(u*c^3);
+E := [2-t,t-t^2,t-t^2,0,0];
+P := [R!0,0];
+Q := [x];

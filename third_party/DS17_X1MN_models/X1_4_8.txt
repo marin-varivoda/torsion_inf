@@ -1,0 +1,10 @@
+m := 4;
+n := 2;
+g := 1;
+R<u,v>:=PolynomialRing(Rationals(),2);
+X := v^2 - u^3 + u; // Elliptic curve 32a2
+x := (u-v-1)*(u-v+1)*(u+v-1)^2*(u^3+u^2-u*v^2-u-3*v^2-1)/(64*v^3*(u^2-u-v^2));
+t := -x*(u-v-1)*(u+v+1)/(4*v);
+E := [1,-t,-t,0,0];
+P := [R!0,0];
+Q := [x];

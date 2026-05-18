@@ -1,0 +1,11 @@
+m := 3;
+n := 1;
+g := 0;
+F<z> := CyclotomicField(3);
+R<u,v>:=PolynomialRing(F,2);
+X := u;
+q := z+1;
+t := v;
+E := [(z+2)*v+(1-z),0,(z+1)*v^2-z*v,0,0];
+P := [R!0,0];
+Q := [-v,v];

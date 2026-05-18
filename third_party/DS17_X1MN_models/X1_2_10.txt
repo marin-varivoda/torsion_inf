@@ -1,0 +1,11 @@
+m := 2;
+n := 5;
+g := 1;
+F := Rationals();
+R<u,v>:=PolynomialRing(F,2);
+X := v^2 - u^3 - u^2 + u; // Elliptic curve 20a2
+q := u/v;
+t := 4*u*v/(u*v^2-u^3-3*u^2-v^2);
+E := [0,t^2-2*q*t-2,0,-(t^2-1)*(q*t+1)^2,0];
+P := [R!0,0];
+Q := [(t+1)*(q*t+1),t*(q*t+1)*(t+1)];

@@ -1,0 +1,9 @@
+m := 2;
+n := 1;
+g := 0;
+F := Rationals();
+R<u,v>:=PolynomialRing(F,2);
+X := R!0;
+E := [0,-u-v,0,u*v,0];
+P := [R!0,0];
+Q := [u,0];
