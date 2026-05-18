@@ -40,7 +40,7 @@ printf "Computing the gonality of the reduction... (this might take a moment)\n"
 T := Time();
 gonality := Gonality(C_fin);
 
-printf "Calculation complete. Gonality of the reduction: %o\n", gonality;
+printf "Calculation complete. Gonality of the reduction: %o\n", gonality; // 12
 printf "Total calculation time: %o seconds\n", Time(T);
 
 exit;
