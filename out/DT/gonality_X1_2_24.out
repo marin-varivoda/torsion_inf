@@ -1,12 +1,12 @@
-Magma V2.29-4     Mon May 18 2026 07:13:52 on mordell  [Seed = 2499050828]
+Magma V2.29-4     Mon May 18 2026 13:56:16 on mordell  [Seed = 2482185319]
 Type ? for help.  Type <Ctrl>-D to quit.
 
 Loading file "DT/gonality_X1_2_24.m"
 Loading "../third_party/DS17_X1MN_models/X1_2_24.txt"
-Initialized the model for X_1(2, 24) and reduced it over a finite field with 5 
+Initialized the model for X_1(2, 24) and reduced it over a finite field with 7 
 elements.
 Computing the exact gonality of X_1(2, 24)... (this might take a moment)
-Calculation complete. Gonality: 7
-Total calculation time: 38.180 seconds
+Calculation complete. Gonality: 8
+Total calculation time: 611.860 seconds
 
-Total time: 38.189 seconds, Total memory usage: 64.12MB
+Total time: 611.899 seconds, Total memory usage: 11644.28MB
