@@ -23,7 +23,14 @@ for name in \
 	gonality_lb_X1_2_30 \
 	gonality_lb_X1_2_32 \
 	gonality_lb_X1_2_34 \
-	gonality_lb_X1_2_36
+	gonality_lb_X1_2_36 \
+	gonality_lb_X1_41 \
+	gonality_lb_X1_42 \
+	gonality_lb_X1_44 \
+	gonality_lb_X1_45 \
+	gonality_lb_X1_46 \
+	gonality_lb_X1_48 \
+	gonality_lb_X1_50
 do
 	echo "starting $name"
 	magma -n "DT/${name}.m" >"$out/${name}.out" 2>&1 &
