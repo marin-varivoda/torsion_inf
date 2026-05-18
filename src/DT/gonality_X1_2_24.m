@@ -7,7 +7,7 @@ C := Curve(A, X);
 C_proj := ProjectiveClosure(C);
 
 // Reduce the curve over finite field
-p := 3;
+p := 5;
 C_fin := Curve(Reduction(C_proj, p));
 
 printf "Initialized the model for X_1(%o, %o) and reduced it over a finite field with %o elements.\n", m, m*n, p;
