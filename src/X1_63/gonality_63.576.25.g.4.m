@@ -19,9 +19,12 @@ load "X1_63/63.576.25.g.4.m";
 lmfdb_label := "63.576.25.g.4";
 
 // Use Zywina's Modular package to construct a model from the LMFDB subgroup
-// generators.
+// generators loaded above.
+T := Time();
 X := CreateModularCurveRec(level, gens);
 X := FindModelOfXG(X);
+printf "Model construction: %o seconds\n", Time(T);
+printf "%o\n", X`psi;
 
 R := Universe(X`psi); // Extract the polynomial ring where equations live
 C := Curve(ProjectiveSpace(R), X`psi); // Construct the modular curve
@@ -41,5 +44,6 @@ T := Time();
 gonality := Gonality(C_fin);
 
 printf "Calculation complete. Gonality of the reduction: %o\n", gonality;
+printf "Total calculation time: %o seconds\n", Time(T);
 
 exit;
