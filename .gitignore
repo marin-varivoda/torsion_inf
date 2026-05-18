@@ -2,4 +2,13 @@
 third_party/CurveArith/src/classgroup.sig
 third_party/CurveArith/src/gonality.sig
 
+third_party/Modular/earlier_code/CPdata/CPdata.sig
+third_party/Modular/earlier_code/magma/chars.sig
+third_party/Modular/earlier_code/magma/genus1.sig
+third_party/Modular/earlier_code/magma/gl2base.sig
+third_party/Modular/earlier_code/magma/gl2points.sig
+third_party/Modular/earlier_code/magma/tracehash.sig
+third_party/Modular/earlier_code/magma/utils.sig
+third_party/Modular/main/Modular.sig
+
 out/
