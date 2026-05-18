@@ -8,7 +8,7 @@ The `src/DT/` directory holds code that uses [CurveArith](https://github.com/nt-
 ./scripts/run_DT.sh
 ```
 
-To ensure this repository is as self-contained as possbile, we include copies of the necessary data (models for $X1(N)$, $X1(M, N)$) and third-party libraries in the `third-party` directory. This keeps the code functional even if the external sources become unavailable.
+To ensure this repository is as self-contained as possbile, we include copies of the necessary data (models for $X_1(N)$, $X_1(M, N)$) and third-party libraries in the `third-party` directory. This keeps the code functional even if the external sources become unavailable.
 
 ## Data Sources and Attribution
 
@@ -39,5 +39,11 @@ These optimized equations $f(x,y)=0$ for $X_1(N)$ are joint work by Andrew V. Su
 - **Authors:** Maarten Derickx and Kenji Terao
 - **Source Repository:** [nt-lib/CurveArith](https://github.com/nt-lib/CurveArith)
 
-
 > **Maarten Derickx and Kenji Terao**, *Computing class groups and gonalities of algebraic curves over finite fields*, ([arXiv 2026](https://arxiv.org/abs/2602.17417))
+
+### Modular
+- **Author:** David Zywina
+- **Source Repository:** [davidzywina/Modular](https://github.com/davidzywina/Modular)
+
+> **David Zywina**, *Classification of modular curves with low gonality*, ([preprint](https://pi.math.cornell.edu/~zywina/papers/lowgonality.pdf)).
+
