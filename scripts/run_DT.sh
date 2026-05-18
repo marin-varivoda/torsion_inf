@@ -29,8 +29,9 @@ do
 	total=$((total + 1))
 done
 
-echo "$total jobs started"
+echo "started $total jobs"
 
+tick=0
 while :; do
 	running=0
 	for pid in $pids; do
@@ -38,12 +39,21 @@ while :; do
 			running=$((running + 1))
 		fi
 	done
+	done=$((total - running))
+	case $((tick % 4)) in
+	0) spin='|' ;;
+	1) spin='/' ;;
+	2) spin='-' ;;
+	3) spin='\' ;;
+	esac
+	tick=$((tick + 1))
+	printf '\rProgress: %d of %d  %s' "$done" "$total" "$spin"
 	if [ "$running" -eq 0 ]; then
 		break
 	fi
-	echo "$running of $total still running"
-	sleep 10
+	sleep 1
 done
+printf '\rProgress: %d of %d\n' "$total" "$total"
 
 failed=0
 for pid in $pids; do
