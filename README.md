@@ -2,7 +2,7 @@
 
 Magma code in this repository is meant to be run from `src/` working directory. Paths for `load` command in Magma are written relative to that path. 
 
-The `src/DT/` directory holds code that uses [CurveArith](https://github.com/nt-lib/CurveArith) (Derickx–Terao) to compute lower bounds on the gonality of modular curves $X_1(m, mn)$. To run all of these in parallel and save logs under `out/DT/`, use:
+The `src/DT/` directory holds code that uses [CurveArith](https://github.com/nt-lib/CurveArith) (Derickx–Terao) to compute lower bounds on the gonality of modular curves $X_1(m, mn)$. To run all of these in parallel (20 jobs in total) and save logs under `out/DT/`, use:
 
 ```sh
 ./scripts/run_DT.sh

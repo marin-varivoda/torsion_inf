@@ -1,0 +1,3 @@
+The folder `magma` contains files from "https://github.com/AndrewVSutherland/Magma/" which contains code to efficiently deal with open subgroups of `GL(2,Zhat)` and `SL(2,Zhat)` (which are given as subgroups of `GL(2,Z/N)` and `SL(2,Z/N)`, respectively).   This is significantly faster than using Magma's intrinsic functions.
+
+The folder `CPdata` contains the data of the Cummins-Pauli database of congruence subgroups of genus at most 24.
