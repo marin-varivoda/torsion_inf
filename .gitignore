@@ -1,3 +1,5 @@
 # magma generates these files automatically for me
 third_party/CurveArith/src/classgroup.sig
 third_party/CurveArith/src/gonality.sig
+
+out/

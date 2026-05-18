@@ -16,8 +16,10 @@ pids=
 total=0
 
 for name in \
-	gonality_lb_X1_2_26 \
-	gonality_lb_X1_2_28 \
+	gonality_X1_2_22 \
+	gonality_X1_2_24 \
+	gonality_X1_2_26 \
+	gonality_X1_2_28 \
 	gonality_lb_X1_2_30 \
 	gonality_lb_X1_2_32 \
 	gonality_lb_X1_2_34 \
