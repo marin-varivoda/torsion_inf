@@ -342,6 +342,9 @@ function ParallelMapRRSpaceHasFuncOfDegAtMost18(task_inputs)
                 catch e
                     error "Parallel computation failed while stopping a worker.";
                 end try;
+
+                // This worker has no more tasks to receive. Remove its socket from the active set
+                Exclude(~worker_sockets, sock);
             end if;
         end for;
     end while;
