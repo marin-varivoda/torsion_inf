@@ -203,7 +203,7 @@ end function;
  */
 function ParallelMapRRSpaceHasFuncOfDegAtMost18(task_inputs)
     CORE_COUNT := 32;
-    MEMORY_PER_WORKER = 16 * 10^9; // 0 for unlimited
+    MEMORY_PER_WORKER := 16 * 10^9; // 0 for unlimited
 
     num_tasks := #task_inputs;
     if num_tasks eq 0 then
