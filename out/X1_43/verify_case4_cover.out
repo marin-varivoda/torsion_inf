@@ -1,0 +1,259 @@
+Loaded 694 cover divisors.
+All have degree <= 57.
+Starting verification for k = 1...
+Finished k = 1, checked 1140 divisors.
+Starting verification for k = 2...
+k = 2, checked for this k = 9998860, total checked = 10000000, rate = 19804673 divisors/sec
+k = 2, checked for this k = 19998860, total checked = 20000000, rate = 19952221 divisors/sec
+k = 2, checked for this k = 29998860, total checked = 30000000, rate = 20058554 divisors/sec
+k = 2, checked for this k = 39998860, total checked = 40000000, rate = 20112772 divisors/sec
+k = 2, checked for this k = 49998860, total checked = 50000000, rate = 20198694 divisors/sec
+k = 2, checked for this k = 59998860, total checked = 60000000, rate = 20264774 divisors/sec
+k = 2, checked for this k = 69998860, total checked = 70000000, rate = 20305199 divisors/sec
+k = 2, checked for this k = 79998860, total checked = 80000000, rate = 20348789 divisors/sec
+k = 2, checked for this k = 89998860, total checked = 90000000, rate = 20378690 divisors/sec
+k = 2, checked for this k = 99998860, total checked = 100000000, rate = 20377996 divisors/sec
+k = 2, checked for this k = 109998860, total checked = 110000000, rate = 20398944 divisors/sec
+k = 2, checked for this k = 119998860, total checked = 120000000, rate = 20423245 divisors/sec
+k = 2, checked for this k = 129998860, total checked = 130000000, rate = 20435765 divisors/sec
+k = 2, checked for this k = 139998860, total checked = 140000000, rate = 20449887 divisors/sec
+k = 2, checked for this k = 149998860, total checked = 150000000, rate = 20441920 divisors/sec
+k = 2, checked for this k = 159998860, total checked = 160000000, rate = 20444842 divisors/sec
+k = 2, checked for this k = 169998860, total checked = 170000000, rate = 20446978 divisors/sec
+k = 2, checked for this k = 179998860, total checked = 180000000, rate = 20455911 divisors/sec
+k = 2, checked for this k = 189998860, total checked = 190000000, rate = 20462313 divisors/sec
+k = 2, checked for this k = 199998860, total checked = 200000000, rate = 20462213 divisors/sec
+k = 2, checked for this k = 209998860, total checked = 210000000, rate = 20456249 divisors/sec
+Finished k = 2, checked 210859245 divisors.
+Starting verification for k = 3...
+k = 3, checked for this k = 9139615, total checked = 220000000, rate = 20009317 divisors/sec
+k = 3, checked for this k = 19139615, total checked = 230000000, rate = 19649618 divisors/sec
+k = 3, checked for this k = 29139615, total checked = 240000000, rate = 19350396 divisors/sec
+k = 3, checked for this k = 39139615, total checked = 250000000, rate = 19107239 divisors/sec
+k = 3, checked for this k = 49139615, total checked = 260000000, rate = 18913219 divisors/sec
+k = 3, checked for this k = 59139615, total checked = 270000000, rate = 18691095 divisors/sec
+k = 3, checked for this k = 69139615, total checked = 280000000, rate = 18516379 divisors/sec
+k = 3, checked for this k = 79139615, total checked = 290000000, rate = 18378725 divisors/sec
+k = 3, checked for this k = 89139615, total checked = 300000000, rate = 18242360 divisors/sec
+k = 3, checked for this k = 99139615, total checked = 310000000, rate = 18135687 divisors/sec
+k = 3, checked for this k = 109139615, total checked = 320000000, rate = 18041141 divisors/sec
+k = 3, checked for this k = 119139615, total checked = 330000000, rate = 17902983 divisors/sec
+k = 3, checked for this k = 129139615, total checked = 340000000, rate = 17792062 divisors/sec
+k = 3, checked for this k = 139139615, total checked = 350000000, rate = 17705775 divisors/sec
+k = 3, checked for this k = 149139615, total checked = 360000000, rate = 17617910 divisors/sec
+k = 3, checked for this k = 159139615, total checked = 370000000, rate = 17549781 divisors/sec
+k = 3, checked for this k = 169139615, total checked = 380000000, rate = 17483085 divisors/sec
+k = 3, checked for this k = 179139615, total checked = 390000000, rate = 17420543 divisors/sec
+k = 3, checked for this k = 189139615, total checked = 400000000, rate = 17353709 divisors/sec
+k = 3, checked for this k = 199139615, total checked = 410000000, rate = 17299588 divisors/sec
+k = 3, checked for this k = 209139615, total checked = 420000000, rate = 17258540 divisors/sec
+k = 3, checked for this k = 219139615, total checked = 430000000, rate = 17213117 divisors/sec
+k = 3, checked for this k = 229139615, total checked = 440000000, rate = 17178468 divisors/sec
+k = 3, checked for this k = 239139615, total checked = 450000000, rate = 17100557 divisors/sec
+k = 3, checked for this k = 249139615, total checked = 460000000, rate = 17040243 divisors/sec
+k = 3, checked for this k = 259139615, total checked = 470000000, rate = 16994465 divisors/sec
+k = 3, checked for this k = 269139615, total checked = 480000000, rate = 16945310 divisors/sec
+k = 3, checked for this k = 279139615, total checked = 490000000, rate = 16909580 divisors/sec
+k = 3, checked for this k = 289139615, total checked = 500000000, rate = 16875989 divisors/sec
+k = 3, checked for this k = 299139615, total checked = 510000000, rate = 16840348 divisors/sec
+k = 3, checked for this k = 309139615, total checked = 520000000, rate = 16803314 divisors/sec
+k = 3, checked for this k = 319139615, total checked = 530000000, rate = 16775868 divisors/sec
+k = 3, checked for this k = 329139615, total checked = 540000000, rate = 16754157 divisors/sec
+k = 3, checked for this k = 339139615, total checked = 550000000, rate = 16728734 divisors/sec
+k = 3, checked for this k = 349139615, total checked = 560000000, rate = 16712059 divisors/sec
+k = 3, checked for this k = 359139615, total checked = 570000000, rate = 16697757 divisors/sec
+k = 3, checked for this k = 369139615, total checked = 580000000, rate = 16663243 divisors/sec
+k = 3, checked for this k = 379139615, total checked = 590000000, rate = 16640989 divisors/sec
+k = 3, checked for this k = 389139615, total checked = 600000000, rate = 16623132 divisors/sec
+k = 3, checked for this k = 399139615, total checked = 610000000, rate = 16605470 divisors/sec
+k = 3, checked for this k = 409139615, total checked = 620000000, rate = 16589257 divisors/sec
+k = 3, checked for this k = 419139615, total checked = 630000000, rate = 16575763 divisors/sec
+k = 3, checked for this k = 429139615, total checked = 640000000, rate = 16562270 divisors/sec
+k = 3, checked for this k = 439139615, total checked = 650000000, rate = 16547960 divisors/sec
+k = 3, checked for this k = 449139615, total checked = 660000000, rate = 16538250 divisors/sec
+k = 3, checked for this k = 459139615, total checked = 670000000, rate = 16530959 divisors/sec
+k = 3, checked for this k = 469139615, total checked = 680000000, rate = 16492340 divisors/sec
+k = 3, checked for this k = 479139615, total checked = 690000000, rate = 16464675 divisors/sec
+k = 3, checked for this k = 489139615, total checked = 700000000, rate = 16445986 divisors/sec
+k = 3, checked for this k = 499139615, total checked = 710000000, rate = 16423614 divisors/sec
+k = 3, checked for this k = 509139615, total checked = 720000000, rate = 16409264 divisors/sec
+k = 3, checked for this k = 519139615, total checked = 730000000, rate = 16396439 divisors/sec
+k = 3, checked for this k = 529139615, total checked = 740000000, rate = 16380652 divisors/sec
+k = 3, checked for this k = 539139615, total checked = 750000000, rate = 16364175 divisors/sec
+k = 3, checked for this k = 549139615, total checked = 760000000, rate = 16352807 divisors/sec
+k = 3, checked for this k = 559139615, total checked = 770000000, rate = 16345904 divisors/sec
+k = 3, checked for this k = 569139615, total checked = 780000000, rate = 16335164 divisors/sec
+k = 3, checked for this k = 579139615, total checked = 790000000, rate = 16330006 divisors/sec
+k = 3, checked for this k = 589139615, total checked = 800000000, rate = 16325175 divisors/sec
+k = 3, checked for this k = 599139615, total checked = 810000000, rate = 16305171 divisors/sec
+k = 3, checked for this k = 609139615, total checked = 820000000, rate = 16294291 divisors/sec
+k = 3, checked for this k = 619139615, total checked = 830000000, rate = 16286637 divisors/sec
+k = 3, checked for this k = 629139615, total checked = 840000000, rate = 16278859 divisors/sec
+k = 3, checked for this k = 639139615, total checked = 850000000, rate = 16272072 divisors/sec
+k = 3, checked for this k = 649139615, total checked = 860000000, rate = 16268034 divisors/sec
+k = 3, checked for this k = 659139615, total checked = 870000000, rate = 16262334 divisors/sec
+k = 3, checked for this k = 669139615, total checked = 880000000, rate = 16255728 divisors/sec
+k = 3, checked for this k = 679139615, total checked = 890000000, rate = 16251862 divisors/sec
+k = 3, checked for this k = 689139615, total checked = 900000000, rate = 16250083 divisors/sec
+k = 3, checked for this k = 699139615, total checked = 910000000, rate = 16246694 divisors/sec
+k = 3, checked for this k = 709139615, total checked = 920000000, rate = 16236838 divisors/sec
+k = 3, checked for this k = 719139615, total checked = 930000000, rate = 16225434 divisors/sec
+k = 3, checked for this k = 729139615, total checked = 940000000, rate = 16217756 divisors/sec
+k = 3, checked for this k = 739139615, total checked = 950000000, rate = 16213399 divisors/sec
+k = 3, checked for this k = 749139615, total checked = 960000000, rate = 16206065 divisors/sec
+k = 3, checked for this k = 759139615, total checked = 970000000, rate = 16203026 divisors/sec
+k = 3, checked for this k = 769139615, total checked = 980000000, rate = 16200056 divisors/sec
+k = 3, checked for this k = 779139615, total checked = 990000000, rate = 16191742 divisors/sec
+k = 3, checked for this k = 789139615, total checked = 1000000000, rate = 16187903 divisors/sec
+k = 3, checked for this k = 799139615, total checked = 1010000000, rate = 16185044 divisors/sec
+k = 3, checked for this k = 809139615, total checked = 1020000000, rate = 16182308 divisors/sec
+k = 3, checked for this k = 819139615, total checked = 1030000000, rate = 16180628 divisors/sec
+k = 3, checked for this k = 829139615, total checked = 1040000000, rate = 16177398 divisors/sec
+k = 3, checked for this k = 839139615, total checked = 1050000000, rate = 16171100 divisors/sec
+k = 3, checked for this k = 849139615, total checked = 1060000000, rate = 16167658 divisors/sec
+k = 3, checked for this k = 859139615, total checked = 1070000000, rate = 16166133 divisors/sec
+k = 3, checked for this k = 869139615, total checked = 1080000000, rate = 16163372 divisors/sec
+k = 3, checked for this k = 879139615, total checked = 1090000000, rate = 16161704 divisors/sec
+Finished k = 3, checked 886632416 divisors.
+Starting verification for k = 4...
+k = 4, checked for this k = 2507199, total checked = 1100000000, rate = 16144244 divisors/sec
+k = 4, checked for this k = 12507199, total checked = 1110000000, rate = 16103259 divisors/sec
+k = 4, checked for this k = 22507199, total checked = 1120000000, rate = 16070002 divisors/sec
+k = 4, checked for this k = 32507199, total checked = 1130000000, rate = 16040185 divisors/sec
+k = 4, checked for this k = 42507199, total checked = 1140000000, rate = 16018198 divisors/sec
+k = 4, checked for this k = 52507199, total checked = 1150000000, rate = 15996971 divisors/sec
+k = 4, checked for this k = 62507199, total checked = 1160000000, rate = 15969876 divisors/sec
+k = 4, checked for this k = 72507199, total checked = 1170000000, rate = 15947955 divisors/sec
+k = 4, checked for this k = 82507199, total checked = 1180000000, rate = 15930120 divisors/sec
+k = 4, checked for this k = 92507199, total checked = 1190000000, rate = 15912978 divisors/sec
+k = 4, checked for this k = 102507199, total checked = 1200000000, rate = 15900546 divisors/sec
+k = 4, checked for this k = 112507199, total checked = 1210000000, rate = 15883064 divisors/sec
+k = 4, checked for this k = 122507199, total checked = 1220000000, rate = 15858607 divisors/sec
+k = 4, checked for this k = 132507199, total checked = 1230000000, rate = 15841451 divisors/sec
+k = 4, checked for this k = 142507199, total checked = 1240000000, rate = 15827090 divisors/sec
+k = 4, checked for this k = 152507199, total checked = 1250000000, rate = 15814437 divisors/sec
+k = 4, checked for this k = 162507199, total checked = 1260000000, rate = 15805310 divisors/sec
+k = 4, checked for this k = 172507199, total checked = 1270000000, rate = 15790479 divisors/sec
+k = 4, checked for this k = 182507199, total checked = 1280000000, rate = 15779995 divisors/sec
+k = 4, checked for this k = 192507199, total checked = 1290000000, rate = 15772085 divisors/sec
+k = 4, checked for this k = 202507199, total checked = 1300000000, rate = 15763713 divisors/sec
+k = 4, checked for this k = 212507199, total checked = 1310000000, rate = 15747210 divisors/sec
+k = 4, checked for this k = 222507199, total checked = 1320000000, rate = 15729458 divisors/sec
+k = 4, checked for this k = 232507199, total checked = 1330000000, rate = 15714551 divisors/sec
+k = 4, checked for this k = 242507199, total checked = 1340000000, rate = 15700340 divisors/sec
+k = 4, checked for this k = 252507199, total checked = 1350000000, rate = 15690593 divisors/sec
+k = 4, checked for this k = 262507199, total checked = 1360000000, rate = 15683243 divisors/sec
+k = 4, checked for this k = 272507199, total checked = 1370000000, rate = 15670141 divisors/sec
+k = 4, checked for this k = 282507199, total checked = 1380000000, rate = 15662175 divisors/sec
+k = 4, checked for this k = 292507199, total checked = 1390000000, rate = 15655869 divisors/sec
+k = 4, checked for this k = 302507199, total checked = 1400000000, rate = 15650710 divisors/sec
+k = 4, checked for this k = 312507199, total checked = 1410000000, rate = 15641763 divisors/sec
+k = 4, checked for this k = 322507199, total checked = 1420000000, rate = 15633001 divisors/sec
+k = 4, checked for this k = 332507199, total checked = 1430000000, rate = 15626507 divisors/sec
+k = 4, checked for this k = 342507199, total checked = 1440000000, rate = 15620501 divisors/sec
+k = 4, checked for this k = 352507199, total checked = 1450000000, rate = 15617071 divisors/sec
+k = 4, checked for this k = 362507199, total checked = 1460000000, rate = 15610549 divisors/sec
+k = 4, checked for this k = 372507199, total checked = 1470000000, rate = 15607141 divisors/sec
+k = 4, checked for this k = 382507199, total checked = 1480000000, rate = 15599817 divisors/sec
+k = 4, checked for this k = 392507199, total checked = 1490000000, rate = 15578096 divisors/sec
+k = 4, checked for this k = 402507199, total checked = 1500000000, rate = 15564874 divisors/sec
+k = 4, checked for this k = 412507199, total checked = 1510000000, rate = 15555600 divisors/sec
+k = 4, checked for this k = 422507199, total checked = 1520000000, rate = 15544691 divisors/sec
+k = 4, checked for this k = 432507199, total checked = 1530000000, rate = 15538238 divisors/sec
+k = 4, checked for this k = 442507199, total checked = 1540000000, rate = 15528807 divisors/sec
+k = 4, checked for this k = 452507199, total checked = 1550000000, rate = 15521480 divisors/sec
+k = 4, checked for this k = 462507199, total checked = 1560000000, rate = 15516254 divisors/sec
+k = 4, checked for this k = 472507199, total checked = 1570000000, rate = 15510618 divisors/sec
+k = 4, checked for this k = 482507199, total checked = 1580000000, rate = 15506797 divisors/sec
+k = 4, checked for this k = 492507199, total checked = 1590000000, rate = 15495656 divisors/sec
+k = 4, checked for this k = 502507199, total checked = 1600000000, rate = 15490353 divisors/sec
+k = 4, checked for this k = 512507199, total checked = 1610000000, rate = 15486154 divisors/sec
+k = 4, checked for this k = 522507199, total checked = 1620000000, rate = 15482999 divisors/sec
+k = 4, checked for this k = 532507199, total checked = 1630000000, rate = 15478982 divisors/sec
+k = 4, checked for this k = 542507199, total checked = 1640000000, rate = 15475786 divisors/sec
+k = 4, checked for this k = 552507199, total checked = 1650000000, rate = 15473602 divisors/sec
+k = 4, checked for this k = 562507199, total checked = 1660000000, rate = 15466492 divisors/sec
+k = 4, checked for this k = 572507199, total checked = 1670000000, rate = 15459655 divisors/sec
+k = 4, checked for this k = 582507199, total checked = 1680000000, rate = 15454748 divisors/sec
+k = 4, checked for this k = 592507199, total checked = 1690000000, rate = 15450038 divisors/sec
+k = 4, checked for this k = 602507199, total checked = 1700000000, rate = 15447609 divisors/sec
+k = 4, checked for this k = 612507199, total checked = 1710000000, rate = 15442862 divisors/sec
+k = 4, checked for this k = 622507199, total checked = 1720000000, rate = 15440629 divisors/sec
+k = 4, checked for this k = 632507199, total checked = 1730000000, rate = 15438759 divisors/sec
+k = 4, checked for this k = 642507199, total checked = 1740000000, rate = 15435229 divisors/sec
+k = 4, checked for this k = 652507199, total checked = 1750000000, rate = 15433340 divisors/sec
+k = 4, checked for this k = 662507199, total checked = 1760000000, rate = 15431322 divisors/sec
+k = 4, checked for this k = 672507199, total checked = 1770000000, rate = 15423999 divisors/sec
+Finished k = 4, checked 680212160 divisors.
+Starting verification for k = 5...
+k = 5, checked for this k = 2295039, total checked = 1780000000, rate = 15398080 divisors/sec
+k = 5, checked for this k = 12295039, total checked = 1790000000, rate = 15346256 divisors/sec
+k = 5, checked for this k = 22295039, total checked = 1800000000, rate = 15299132 divisors/sec
+k = 5, checked for this k = 32295039, total checked = 1810000000, rate = 15256166 divisors/sec
+k = 5, checked for this k = 42295039, total checked = 1820000000, rate = 15210424 divisors/sec
+k = 5, checked for this k = 52295039, total checked = 1830000000, rate = 15168939 divisors/sec
+k = 5, checked for this k = 62295039, total checked = 1840000000, rate = 15127756 divisors/sec
+k = 5, checked for this k = 72295039, total checked = 1850000000, rate = 15084852 divisors/sec
+k = 5, checked for this k = 82295039, total checked = 1860000000, rate = 15045249 divisors/sec
+k = 5, checked for this k = 92295039, total checked = 1870000000, rate = 15006699 divisors/sec
+k = 5, checked for this k = 102295039, total checked = 1880000000, rate = 14969510 divisors/sec
+k = 5, checked for this k = 112295039, total checked = 1890000000, rate = 14930009 divisors/sec
+k = 5, checked for this k = 122295039, total checked = 1900000000, rate = 14891735 divisors/sec
+k = 5, checked for this k = 132295039, total checked = 1910000000, rate = 14855753 divisors/sec
+k = 5, checked for this k = 142295039, total checked = 1920000000, rate = 14820041 divisors/sec
+k = 5, checked for this k = 152295039, total checked = 1930000000, rate = 14785842 divisors/sec
+k = 5, checked for this k = 162295039, total checked = 1940000000, rate = 14751069 divisors/sec
+k = 5, checked for this k = 172295039, total checked = 1950000000, rate = 14718197 divisors/sec
+k = 5, checked for this k = 182295039, total checked = 1960000000, rate = 14684742 divisors/sec
+k = 5, checked for this k = 192295039, total checked = 1970000000, rate = 14651436 divisors/sec
+k = 5, checked for this k = 202295039, total checked = 1980000000, rate = 14615697 divisors/sec
+k = 5, checked for this k = 212295039, total checked = 1990000000, rate = 14583289 divisors/sec
+k = 5, checked for this k = 222295039, total checked = 2000000000, rate = 14552174 divisors/sec
+k = 5, checked for this k = 232295039, total checked = 2010000000, rate = 14521137 divisors/sec
+k = 5, checked for this k = 242295039, total checked = 2020000000, rate = 14490435 divisors/sec
+k = 5, checked for this k = 252295039, total checked = 2030000000, rate = 14459570 divisors/sec
+k = 5, checked for this k = 262295039, total checked = 2040000000, rate = 14430073 divisors/sec
+k = 5, checked for this k = 272295039, total checked = 2050000000, rate = 14399999 divisors/sec
+k = 5, checked for this k = 282295039, total checked = 2060000000, rate = 14369534 divisors/sec
+k = 5, checked for this k = 292295039, total checked = 2070000000, rate = 14341821 divisors/sec
+k = 5, checked for this k = 302295039, total checked = 2080000000, rate = 14314182 divisors/sec
+k = 5, checked for this k = 312295039, total checked = 2090000000, rate = 14285617 divisors/sec
+k = 5, checked for this k = 322295039, total checked = 2100000000, rate = 14258286 divisors/sec
+Finished k = 5, checked 328865680 divisors.
+Starting verification for k = 6...
+k = 6, checked for this k = 3429359, total checked = 2110000000, rate = 14216131 divisors/sec
+k = 6, checked for this k = 13429359, total checked = 2120000000, rate = 14167852 divisors/sec
+k = 6, checked for this k = 23429359, total checked = 2130000000, rate = 14121105 divisors/sec
+k = 6, checked for this k = 33429359, total checked = 2140000000, rate = 14075622 divisors/sec
+k = 6, checked for this k = 43429359, total checked = 2150000000, rate = 14031287 divisors/sec
+k = 6, checked for this k = 53429359, total checked = 2160000000, rate = 13986535 divisors/sec
+k = 6, checked for this k = 63429359, total checked = 2170000000, rate = 13943414 divisors/sec
+k = 6, checked for this k = 73429359, total checked = 2180000000, rate = 13900628 divisors/sec
+k = 6, checked for this k = 83429359, total checked = 2190000000, rate = 13857019 divisors/sec
+k = 6, checked for this k = 93429359, total checked = 2200000000, rate = 13815966 divisors/sec
+k = 6, checked for this k = 103429359, total checked = 2210000000, rate = 13774702 divisors/sec
+k = 6, checked for this k = 113429359, total checked = 2220000000, rate = 13734044 divisors/sec
+k = 6, checked for this k = 123429359, total checked = 2230000000, rate = 13693717 divisors/sec
+k = 6, checked for this k = 133429359, total checked = 2240000000, rate = 13652649 divisors/sec
+Finished k = 6, checked 134907410 divisors.
+Starting verification for k = 7...
+k = 7, checked for this k = 8521949, total checked = 2250000000, rate = 13603824 divisors/sec
+k = 7, checked for this k = 18521949, total checked = 2260000000, rate = 13555417 divisors/sec
+k = 7, checked for this k = 28521949, total checked = 2270000000, rate = 13506820 divisors/sec
+k = 7, checked for this k = 38521949, total checked = 2280000000, rate = 13458502 divisors/sec
+k = 7, checked for this k = 48521949, total checked = 2290000000, rate = 13408720 divisors/sec
+Finished k = 7, checked 50736840 divisors.
+Starting verification for k = 8...
+k = 8, checked for this k = 7785109, total checked = 2300000000, rate = 13357557 divisors/sec
+Finished k = 8, checked 17626756 divisors.
+Starting verification for k = 9...
+k = 9, checked for this k = 158353, total checked = 2310000000, rate = 13303328 divisors/sec
+Finished k = 9, checked 5516840 divisors.
+Starting verification for k = 10...
+Finished k = 10, checked 1482570 divisors.
+Starting verification for k = 11...
+Finished k = 11, checked 310080 divisors.
+Starting verification for k = 12...
+Finished k = 12, checked 38760 divisors.
+SUCCESS: the cover dominates every divisor in S.
+Total divisors checked: 2317189897

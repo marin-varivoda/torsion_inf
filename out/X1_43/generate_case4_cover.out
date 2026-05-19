@@ -1,0 +1,26 @@
+Found: 1
+k = 1, excess divisors = 1, cover elements = 1
+Found: 1
+k = 2, excess divisors = 1, cover elements = 1
+Found: 6196
+k = 3, excess divisors = 6196, cover elements = 30
+Found: 13626
+k = 4, excess divisors = 13626, cover elements = 259
+Found: 6141
+k = 5, excess divisors = 6141, cover elements = 219
+Found: 2361
+k = 6, excess divisors = 2361, cover elements = 112
+Found: 651
+k = 7, excess divisors = 651, cover elements = 48
+Found: 251
+k = 8, excess divisors = 251, cover elements = 20
+Found: 41
+k = 9, excess divisors = 41, cover elements = 5
+Found: 21
+k = 10, excess divisors = 21, cover elements = 3
+Found: 1
+k = 11, excess divisors = 1, cover elements = 1
+Found: 1
+k = 12, excess divisors = 1, cover elements = 1
+Before pruning: 700
+After pruning: 694
