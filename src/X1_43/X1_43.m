@@ -45,17 +45,17 @@ function getDiamondOrbitRepresentatives(place_list)
     diamond_orbits := [];
     rep := [];
     for plc in place_list do
-        alredy_accounted_for := false;
+        already_accounted_for := false;
 
         // check if plc already is in some orbit
         for diamond_orbit in diamond_orbits do
             if plc in diamond_orbit then
-                alredy_accounted_for := true;
+                already_accounted_for := true;
                 break;
             end if;
         end for;
 
-        if not alredy_accounted_for then
+        if not already_accounted_for then
             Append(~diamond_orbits, DiamondOrbit(C, plc));
             Append(~rep, plc);
         end if;
@@ -137,7 +137,6 @@ function LoadCase4Cover(filename, plc1)
 
     FP := Open(filename, "r");
     ret := [];
-    line_no := 0;
 
     while true do
         line := Gets(FP);
@@ -145,8 +144,6 @@ function LoadCase4Cover(filename, plc1)
         if IsEof(line) then
             break;
         end if;
-
-        line_no +:= 1;
 
         // Skip empty lines, just in case.
         if #line eq 0 then
@@ -159,7 +156,6 @@ function LoadCase4Cover(filename, plc1)
         assert &and[c ge 0 : c in coeffs];
 
         D := &+[ coeffs[i] * plc1[i] : i in [1..#plc1] ];
-
         assert Degree(D) le 57;
 
         Append(~ret, D);
@@ -254,9 +250,9 @@ function ParallelMapRRSpaceHasFuncOfDegAtMost18(task_inputs)
                 end try;
             end while;
 
-            // We violently terminate the child process to prevent normal cleanup on exit. Because fork()
-            // means processes share open file descriptors, a peaceful quit in the child process
-            // would affect the file descriptors of the parent, possibly corrupting the interpreter.
+            // Terminate the child process to prevent normal cleanup on exit. Because fork()
+            // means processes share open file descriptors, letting the child quit normally
+            // would affect the file descriptors of the parent, possibly interfering with the interpreter.
             System(Sprintf("kill -9 %o", Getpid()));
             quit;
  
