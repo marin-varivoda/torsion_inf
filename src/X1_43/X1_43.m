@@ -323,9 +323,10 @@ function ParallelMapRRSpaceHasFuncOfDegAtMost18(task_inputs)
                     eta := (num_tasks - tasks_completed) * (elapsed / tasks_completed);
                     pct := (tasks_completed * 100.0) / num_tasks;
                     
-                    printf "Progress: %o%% (%o/%o) | Elapsed: %os | ETA: %os | Avg/Task/Core: %os\n", 
-                        RealField(4)!pct, tasks_completed, num_tasks, 
-                        RealField(5)!elapsed, RealField(5)!eta, RealField(5)!core_time_per_task;
+                    // We round the duration values to int so the output fits on the same line
+                    printf "%o/%o (%o%%) | elapsed=%os | ETA=%os | core-time/task=%os\n",
+                            tasks_completed, num_tasks, RealField(4)!pct,
+                            Floor(elapsed), Floor(eta), Floor(core_time_per_task);
                 end if;
             end if;
 
