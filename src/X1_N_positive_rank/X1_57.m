@@ -227,3 +227,343 @@ Append(~divisors_to_check, 2*plc1[1] + 3*plc1sum + plc2sum + plc6sum);
 //  Apply the diamond operator to D so that plc1[1] has highest multiplicity in A. We then have
 //  A <= 3*plc1[1] + 4*plc1sum (highest multiplicity at most 7 and only one place with multiplicity >=5 possible)
 Append(~divisors_to_check, 3*plc1[1] + 4*plc1sum + plc6sum);
+
+
+// 6) Cover divisors in S which are only supported on places of degree 1 and degree 2
+
+// Divisor of this class has the form D = A + B where A>=0 and B>=0 are effective divisors
+// supported on places of degree 1 and degree 2 respectively. We consider all the possible
+// pairs (deg A, deg B) and do the case split accordingly:
+
+//  6.1)    (6, 12)
+//  In this case we have A <= plc1sum. The divisor B has total multiplicity 6 on degree 2 places,
+//  therefore B <= 3*plc2sum + 3*plc2[i], where plc2[i] is a place of highest multiplicity in B.
+//  We have D <= plc1sum + 3*plc2sum + 3*plc2[i]
+Append(~divisors_to_check, plc1sum + 3*plc2sum + 3*plc2[1] + 3*plc2[2] + 3*plc2[3]);
+Append(~divisors_to_check, plc1sum + 3*plc2sum + 3*plc2[4] + 3*plc2[5] + 3*plc2[6]);
+Append(~divisors_to_check, plc1sum + 3*plc2sum + 3*plc2[7] + 3*plc2[8] + 3*plc2[9]);
+
+
+//  6.2)    (8, 10)
+//  Apply the diamond operator to D so that plc1[1] has highest multiplicity in A. We then have
+//  A <= plc1[1] + 2*plc1sum. The divisor B has total multiplicity 5 on degree 2 places,
+//  therefore B <= 2*plc2sum + 3*plc2[i], where plc2[i] is a place of highest multiplicity in B.
+//  We have D <= plc1[1] + 2*plc1sum + 2*plc2sum + 3*plc2[i]
+Append(~divisors_to_check, plc1[1] + 2*plc1sum + 2*plc2sum + 3*plc2[1] + 3*plc2[2]);
+Append(~divisors_to_check, plc1[1] + 2*plc1sum + 2*plc2sum + 3*plc2[3] + 3*plc2[4]);
+Append(~divisors_to_check, plc1[1] + 2*plc1sum + 2*plc2sum + 3*plc2[5] + 3*plc2[6]);
+Append(~divisors_to_check, plc1[1] + 2*plc1sum + 2*plc2sum + 3*plc2[7] + 3*plc2[8]);
+Append(~divisors_to_check, plc1[1] + 2*plc1sum + 2*plc2sum + 3*plc2[9]);
+
+
+//  6.3)    (10, 8)
+//  Apply the diamond operator to D so that plc1[1] has highest multiplicity in A. We then have
+//  A <= 3*plc1[1] + 2*plc1sum + plc1[i] for some i. This is because 5 is the highest possible multiplicity in A,
+//  and apart from plc1[1] at most one place can have multiplicity >=3.
+//  Similarly, B <= 2*plc2sum + 2*plc2[j] for some j.
+//  We have D <= 3*plc1[1] + 2*plc1sum + 2*plc2sum +  plc1[i] + 2*plc2[j] <= 3*plc1[1] + 2*plc1sum + 2*plc2sum + plc1block_xxx + 2*plc2block_yyy
+
+//  We group the possible plc1[i] into blocks of size six, and the possible plc2[j] into blocks of size two.
+
+plc1block_1_6   := plc1[1]  + plc1[2]  + plc1[3]  + plc1[4]  + plc1[5]  + plc1[6];
+plc1block_7_12  := plc1[7]  + plc1[8]  + plc1[9]  + plc1[10] + plc1[11] + plc1[12];
+plc1block_13_18 := plc1[13] + plc1[14] + plc1[15] + plc1[16] + plc1[17] + plc1[18];
+
+plc2block_1_2 := plc2[1] + plc2[2];
+plc2block_3_4 := plc2[3] + plc2[4];
+plc2block_5_6 := plc2[5] + plc2[6];
+plc2block_7_8 := plc2[7] + plc2[8];
+plc2block_9   := plc2[9];
+
+for R in [plc1block_1_6, plc1block_7_12, plc1block_13_18] do
+    for Q in [plc2block_1_2, plc2block_3_4, plc2block_5_6, plc2block_7_8, plc2block_9] do
+        Append(~divisors_to_check, 3*plc1[1] + 2*plc1sum + R + 2*plc2sum + 2*Q);
+    end for;
+end for;
+
+// Note that if we had iterated over (i,j) pairs, we would need to add 17*9=153 more divisors. With this pair of blocks approach
+// we get away with only adding 3*5=15 new divisors, while keeping the degree < 90.
+
+
+//  6.4)    (12, 6)
+//  Apply the diamond operator to D so that plc1[1] has highest multiplicity in A. We then have
+//  A <= 4*plc1[1] + 3*plc1sum + plc1[i] for some i. This is because 7 is the highest possible multiplicity in A,
+//  and apart from plc1[1] at most one place can have multiplicity >= 4.
+//  Similarly, B <= plc2sum + 2*plc2[j] for some j.
+//  We have D <= 4*plc1[1] + 3*plc1sum + plc1[i] + plc2sum + 2*plc2[j] <= 4*plc1[1] + 3*plc1sum + plc1block_xxx + plc2sum + 2*plc2[j]
+
+//  We group the possible plc1[i] into two blocks of size nine, and we iterate over all plc2[j].
+plc1block_1_9   := plc1[1]  + plc1[2]  + plc1[3]  + plc1[4]  + plc1[5]  + plc1[6]  + plc1[7]  + plc1[8]  + plc1[9];
+plc1block_10_18 := plc1[10] + plc1[11] + plc1[12] + plc1[13] + plc1[14] + plc1[15] + plc1[16] + plc1[17] + plc1[18];
+
+for R in [plc1block_1_9, plc1block_10_18] do
+    for Q in plc2 do
+        Append(~divisors_to_check, 4*plc1[1] + 3*plc1sum + R + plc2sum + 2*Q);
+    end for;
+end for;
+
+
+//  6.5)    (14, 4)
+//  Apply the diamond operator to D so that plc1[1] has highest multiplicity in A. We then have
+//  A <= 6*plc1[1] + 3*plc1sum + 2*plc1[i] for some i. This is because 9 is the highest possible multiplicity in A, 
+//  and apart from plc1[1] at most one place can have multiplicity >= 4.
+//  Similarly, B <= plc2sum + plc2[j] for some j.
+//  We have D <= 6*plc1[1] + 3*plc1sum + 2*plc1[i] + plc2sum + plc2[j] <= 6*plc1[1] + 3*plc1sum + 2*plc1block_xxx + plc2sum + plc2block_yyy
+
+//  We group the possible plc1[i] into blocks of size two, and the possible plc2[j] into blocks of size three.
+
+plc1block_1_2   := plc1[1]  + plc1[2];
+plc1block_3_4   := plc1[3]  + plc1[4];
+plc1block_5_6   := plc1[5]  + plc1[6];
+plc1block_7_8   := plc1[7]  + plc1[8];
+plc1block_9_10  := plc1[9]  + plc1[10];
+plc1block_11_12 := plc1[11] + plc1[12];
+plc1block_13_14 := plc1[13] + plc1[14];
+plc1block_15_16 := plc1[15] + plc1[16];
+plc1block_17_18 := plc1[17] + plc1[18];
+
+plc2block_1_3 := plc2[1] + plc2[2] + plc2[3];
+plc2block_4_6 := plc2[4] + plc2[5] + plc2[6];
+plc2block_7_9 := plc2[7] + plc2[8] + plc2[9];
+
+for R in [plc1block_1_2, plc1block_3_4, plc1block_5_6, plc1block_7_8, plc1block_9_10, plc1block_11_12, plc1block_13_14, plc1block_15_16, plc1block_17_18] do
+    for Q in [plc2block_1_3, plc2block_4_6, plc2block_7_9] do
+        Append(~divisors_to_check, 6*plc1[1] + 3*plc1sum + 2*R + plc2sum + Q);
+    end for;
+end for;
+
+
+//  6.6)    (16, 2)
+//  Apply the diamond operator to D so that plc1[1] has highest multiplicity in A. We then have
+//  A <= 7*plc1[1] + 4*plc1sum + 2*plc1[i] for some i. This is because 11 is the highest possible multiplicity in A,
+//  and apart from plc1[1] at most one place can have multiplicity greater than 4.
+//  Then, B = plc2[j] for some j.
+//  We have D <= 7*plc1[1] + 4*plc1sum + 2*plc1[i] + plc2[j] <= 7*plc1[1] + 4*plc1sum + 2*plc1block_xxx + plc2[j]
+
+//  We group the possible plc1[i] into blocks of size four, and we iterate over all plc2[j].
+
+plc1block_1_4   := plc1[1]  + plc1[2]  + plc1[3]  + plc1[4];
+plc1block_5_8   := plc1[5]  + plc1[6]  + plc1[7]  + plc1[8];
+plc1block_9_12  := plc1[9]  + plc1[10] + plc1[11] + plc1[12];
+plc1block_13_16 := plc1[13] + plc1[14] + plc1[15] + plc1[16];
+
+for R in [plc1block_1_4, plc1block_5_8, plc1block_9_12, plc1block_13_16, plc1block_17_18] do
+    for Q in plc2 do
+        Append(~divisors_to_check, 7*plc1[1] + 4*plc1sum + 2*R + Q);
+    end for;
+end for;
+
+
+//  6.7)    (18, 0)
+//  Apply the diamond operator to D so that plc1[1] has highest multiplicity in A. We then have
+//  A <= 9*plc1[1] + 4*plc1sum + 3*plc1[i] + 3*plc1[j] for some i,j. This is because 13 is the highest
+//  possible multiplicity in A, and apart from plc1[1] at most two places can have multiplicity >= 5. Also
+//  the highest possible multiplicity for a place which is not plc1[1] is 7 (in case of 7+7+1+1+1+1=18).
+
+//  We iterate over all possible pairs of plc1[i], plc1[j].
+for i in [2..17] do
+    for j in [i+1..18] do
+        Append(~divisors_to_check, 9*plc1[1] + 4*plc1sum + 3*plc1[i] + 3*plc1[j]);
+    end for;
+end for;
+
+
+
+
+
+/**
+ *  Returns true/ false depending on whether or not RR Space has a non-constant function
+ *  of degree at most 18
+ */
+function RRSpaceHasFuncOfDegAtMost18(D)
+    R, m := RiemannRochSpace(D);
+    for f in R do
+        g := m(f);
+        deg_f := Degree(g);
+        if deg_f gt 0 and deg_f le 18 then
+            return true;
+        end if;
+    end for;
+    return false;
+end function;
+
+/**
+ *  Parallel implementation for RRSpaceHasFuncOfDegAtMost18. The idea is that 
+ *  following two calls produce the same result:
+ *  
+ *  results := ParallelMapRRSpaceHasFuncOfDegAtMost18(divisors_to_check);
+ *  results := [RRSpaceHasFuncOfDegAtMost18(D) : D in divisors_to_check];
+ *  
+ *  but ParallelMapRRSpaceHasFuncOfDegAtMost18 will do this work in parallel
+ *  therefore being faster in practice on multicore systems.
+ */
+function ParallelMapRRSpaceHasFuncOfDegAtMost18(task_inputs)
+    CORE_COUNT := 32;
+    MEMORY_PER_WORKER := 16 * 10^9; // 0 for unlimited
+
+    num_tasks := #task_inputs;
+    if num_tasks eq 0 then
+        return [];
+    end if;
+
+    worker_count := Minimum(CORE_COUNT, num_tasks);
+
+    server_socket := Socket(: LocalHost := "localhost");
+    host, port := Explode(SocketInformation(server_socket));
+
+    // Start worker processes. Each worker receives a task index, computes the
+    // corresponding result, and sends the pair "task_idx,result" back.
+    for worker_idx in [1..worker_count] do
+        child_pid := Fork();
+
+        if child_pid eq 0 then
+            SetMemoryLimit(MEMORY_PER_WORKER); 
+            client_socket := Socket(host, port);
+            
+            // Ask for the first task. Index 0 means no completed task yet.
+            Write(client_socket, "0,false");
+
+            while true do
+                _ := WaitForIO([client_socket]);
+                msg := Read(client_socket);
+                
+                task_idx := -1;
+                try
+                    task_idx := eval msg;
+                catch e
+                    break;
+                end try;
+
+                // The parent sends -1 when there are no more tasks.
+                if task_idx eq -1 then
+                    break;
+                end if;
+
+                task_input := task_inputs[task_idx];
+                task_result := RRSpaceHasFuncOfDegAtMost18(task_input);
+                result_str := Sprintf("%o", task_result);
+
+                try
+                    Write(client_socket, Sprintf("%o,%o", task_idx, result_str));
+                catch e
+                    break;
+                end try;
+            end while;
+
+            // Terminate the child process to prevent normal cleanup on exit. Because fork()
+            // means processes share open file descriptors, letting the child quit normally
+            // would affect the file descriptors of the parent, possibly interfering with the interpreter.
+            System(Sprintf("kill -9 %o", Getpid()));
+            quit;
+ 
+        end if;
+    end for;
+
+    worker_sockets := [];
+    for worker_idx in [1..worker_count] do
+        Append(~worker_sockets, WaitForConnection(server_socket));
+    end for;
+
+    results_by_task_idx := AssociativeArray();
+    next_task_idx := 1;
+    tasks_completed := 0;
+
+    start_time := Realtime();
+    report_interval := Maximum(1, Floor(num_tasks / 200)); // roughly every 0.5%
+    printf "Starting parallel computation with %o tasks across %o workers...\n", num_tasks, worker_count;
+
+    while tasks_completed lt num_tasks do
+        if #worker_sockets eq 0 then
+            error "Parallel computation failed: no worker sockets remain.";
+        end if;
+
+        ready_sockets := WaitForIO(worker_sockets);
+
+        for sock in ready_sockets do
+            try
+                msg := Read(sock);
+            catch e
+                error "Parallel computation failed while reading from a worker.";
+            end try;
+            
+            task_idx := -1;
+            task_result := false;
+
+            try
+                comma_idx := Index(msg, ",");
+                if comma_idx le 1 or comma_idx ge #msg then
+                    error "Invalid worker message.";
+                end if;
+
+                task_idx := eval msg[1..comma_idx-1];
+                result_str := msg[comma_idx+1..#msg];
+
+                if task_idx lt 0 or task_idx gt num_tasks then
+                    error "Invalid task index.";
+                end if;
+
+                if result_str eq "true" then
+                    task_result := true;
+                elif result_str eq "false" then
+                    task_result := false;
+                else
+                    error "Invalid task result.";
+                end if;
+            catch e
+                error "Parallel computation failed: worker returned an invalid message.";
+            end try;
+
+            if task_idx gt 0 then
+                results_by_task_idx[task_idx] := task_result;
+                tasks_completed +:= 1;
+
+                if tasks_completed mod report_interval eq 0 or tasks_completed eq num_tasks then
+                    elapsed := Realtime() - start_time;
+                    core_time_per_task := (elapsed * worker_count) / tasks_completed;
+                    eta := (num_tasks - tasks_completed) * (elapsed / tasks_completed);
+                    pct := (tasks_completed * 100.0) / num_tasks;
+                    
+                    // We round the duration values to int so the output fits on the same line
+                    printf "%o/%o (%o%%) | elapsed=%os | ETA=%os | core-time/task=%os\n",
+                            tasks_completed, num_tasks, RealField(4)!pct,
+                            Floor(elapsed), Floor(eta), Floor(core_time_per_task);
+                end if;
+            end if;
+
+            if next_task_idx le num_tasks then
+                try
+                    Write(sock, Sprintf("%o", next_task_idx));
+                catch e
+                    error "Parallel computation failed while sending a task to a worker.";
+                end try;
+                next_task_idx +:= 1;
+            else
+                try
+                    Write(sock, "-1");
+                catch e
+                    error "Parallel computation failed while stopping a worker.";
+                end try;
+
+                // This worker has no more tasks to receive. Remove its socket from the active set
+                Exclude(~worker_sockets, sock);
+            end if;
+        end for;
+    end while;
+
+    WaitForAllChildren();
+    
+    return [ results_by_task_idx[i] : i in [1..num_tasks] ];
+end function;
+
+printf "Searching RR spaces for %o divisors... (this might take a moment)\n", #divisors_to_check;
+
+T := Time();
+results := ParallelMapRRSpaceHasFuncOfDegAtMost18(divisors_to_check);
+
+num_true := #[res : res in results | res];
+num_false := #results - num_true;
+
+printf "Computation finished. %o divisors produced a non-constant function of degree <= 18 (true), and %o did not (false).\n", num_true, num_false;
+printf "Total calculation time: %o seconds\n", Time(T);
+
+exit;
