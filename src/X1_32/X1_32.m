@@ -1,5 +1,5 @@
-QQ := Rationals();
-A<x, y> := AffineSpace(QQ, 2);
+p := 3;
+A<x, y> := AffineSpace(GF(p), 2);
 
 // Sutherland's FFc32.txt model from https://math.mit.edu/~drew/X1_altcurves.html
 f := x^11*y^5 - 2*x^11*y^4 + 2*x^11*y^3 - 5*x^10*y^6 + 7*x^10*y^5 - 6*x^10*y^4 - 
@@ -19,21 +19,18 @@ f := x^11*y^5 - 2*x^11*y^4 + 2*x^11*y^3 - 5*x^10*y^6 + 7*x^10*y^5 - 6*x^10*y^4 -
 
 C := ProjectiveClosure(Curve(A, f));
 F := FunctionField(C);
-
 printf "Successfully loaded curve.\n";
-printf "Loading cusps from TwoGenerators representation...\n";
+
 
 // Coerce x and y to F before loading qcusps_twogen32.m
 x := F ! x;
 y := F ! y;
+load "X1_32/qcusps_twogen_32.m";
+qcusp_num := #qcusps_twogen;
+printf "Successfully loaded twogen representation for %o rational cusp places.\n", #qcusps_twogen;
 
-load "../src/X1_32/qcusps_twogen_32.m";
-cusps_from_twogen := [Place(twogen_pair) : twogen_pair in qcusps_twogen];
-assert #cusps_from_twogen eq 9;
 
-printf "Computing cusps from scratch...\n";
-
-// Compute cusps from scratch for comparison
+// Compute cusps over F3
 r := (x^2*y - x*y + y - 1) / (x^2*y-x);
 s := (x*y - y + 1) / (x*y);
 
@@ -54,9 +51,41 @@ b8 := a1^2 * a6  + 4*a2*a6 - a1*a3*a4 + a2*a3^2 - a4^2;
 Ebc_disc := -b2^2 * b8 - 8*b4^3 -27*b6^2 + 9 * b2 * b4 * b6;
 
 cusps := Support(Divisor(Ebc_disc));
-assert #cusps eq 9; // X1(32) has 9 cusp places
+printf "Computed total of %o cusp places over finite field with %o elements.\n", #cusps, p;
 
-// Check that cusps eq cusps_from_twogen
-assert Set(cusps) eq Set(cusps_from_twogen);
 
-printf "Loaded and computed cusps match. Test passed successfully!";
+/**
+ *  For a cusp place on X1(32) over F_p, returns the index i in [1..#qcusps_twogen] of
+ *  the unique rational cusp place that "lies over it", in the sense that the divisor obtained
+ *  by reducing the rational cusp place over F_p is >= cusp.
+ */
+function LabelCusp(cusp)
+    for i in [1..#qcusps_twogen] do
+        g1 := qcusps_twogen[i][1];
+        g2 := qcusps_twogen[i][2];
+
+        if Valuation(g1, cusp) gt 0 and Valuation(g2, cusp) gt 0 then
+            return i;
+        end if;
+    end for;
+
+    error "Unable to label cusp. This shouldn't mathematically be possible, check for code errors.";
+end function;
+
+// Compute divisors obtained by reducing rational cusp places modulo p
+NULL_DIVISOR := cusps[1] - cusps[1];
+qcusps_reduced := [NULL_DIVISOR : x in [1..qcusp_num]];
+
+for cusp in cusps do
+    label := LabelCusp(cusp);
+    cusp_deg := Degree(cusp);
+    qcusps_reduced[label] := qcusps_reduced[label] + cusp;
+end for;
+printf "Computed divisors over F%o obtained by reducing rational cusp places.\n", p;
+
+
+cg, mapCgToDiv, mapDivToCg := ClassGroup(C);
+
+// Find the subgroup of all divisor classes that can be obtained by reducing a cusp-supported rational divisor
+qcuspsCgImage := mapDivToCg(qcusps_reduced);
+qcuspsCgSubgrp, mapQCuspSubgrpToCg := sub<cg | qcuspsCgImage>;
