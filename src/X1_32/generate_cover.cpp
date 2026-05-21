@@ -83,6 +83,8 @@ struct Divisor
 
         return true;
     }
+
+    static_assert(sizeof(places)/sizeof(places[1]) >= 2*MAX_T_DEGREE);
 };
 
 // Set of all effective divisors of degree 9
@@ -172,10 +174,6 @@ void exportCover(const std::vector<Divisor> &T, std::filesystem::path outFile);
 
 int main()
 {
-    std::ios_base::sync_with_stdio(0);
-    std::cin.tie(0);
-    std::cout.tie(0);
-
     Divisor tmp;
     buildSRecursive(0, tmp);
 
