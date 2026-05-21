@@ -238,7 +238,7 @@ int main()
     return 0;
 }
 
-void exportCover(const std::vector<Divisor> &T, std::filesystem::path outFile)
+void exportCover(const std::vector<Divisor> &T, const std::filesystem::path& outFile)
 {
     std::ofstream out(outFile);
     if (!out) {

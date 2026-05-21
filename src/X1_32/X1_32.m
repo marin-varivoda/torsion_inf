@@ -42,6 +42,9 @@ a2 := -b;
 a3 := -b;
 a4 := 0;
 a6 := 0;
+C := ProjectiveClosure(Curve(A, f));
+F := FunctionField(C);
+
 
 b2 := a1^2 + 4 * a2;
 b4 := 2*a4 + a1*a3;
@@ -60,14 +63,21 @@ printf "Computed total of %o cusp places over finite field with %o elements.\n",
  *  by reducing the rational cusp place over F_p is >= cusp.
  */
 function LabelCusp(cusp)
+    labels := [];
+
     for i in [1..#qcusps_twogen] do
         g1 := qcusps_twogen[i][1];
         g2 := qcusps_twogen[i][2];
 
+
+
         if Valuation(g1, cusp) gt 0 and Valuation(g2, cusp) gt 0 then
-            return i;
+            Append(~labels, i);
         end if;
     end for;
+
+    print labels;
+    return labels[1];
 
     error "Unable to label cusp. This shouldn't mathematically be possible, check for code errors.";
 end function;
@@ -89,3 +99,99 @@ cg, mapCgToDiv, mapDivToCg := ClassGroup(C);
 // Find the subgroup of all divisor classes that can be obtained by reducing a cusp-supported rational divisor
 qcuspsCgImage := mapDivToCg(qcusps_reduced);
 qcuspsCgSubgrp, mapQCuspSubgrpToCg := sub<cg | qcuspsCgImage>;
+
+
+places := [Places(C, i) : i in [1..9]];
+places_count := [#places[i] : i in [1..9]];
+assert places_count eq [12, 4, 8, 9, 16, 140, 312, 901, 1976];
+
+function LoadCover(filename, places)
+    lines := Split(Read(filename));
+    T := [];
+
+    for line in lines do
+        if #line eq 0 then
+            continue;
+        end if;
+
+        D := places[1][1] - places[1][1];
+
+        // Example:
+        // P_1_2,P_1_2,P_3_7
+        // becomes ["P", "1", "2", "P", "1", "2", "P", "3", "7"].
+        parts := Split(line, ",_");
+        assert #parts mod 3 eq 0;
+
+        for i in [1..#parts by 3] do
+            assert parts[i] eq "P";
+
+            deg := StringToInteger(parts[i + 1]);
+            idx := StringToInteger(parts[i + 2]);
+
+            D +:= places[deg][idx];
+        end for;
+
+        Append(~T, D);
+    end for;
+
+    return T;
+end function;
+
+divisors_to_check := LoadCover("X1_32/deg9_divisors_cover.txt", places);
+
+printf "Loaded %o covering divisors.\n", #divisors_to_check;
+assert #divisors_to_check eq 22606;
+assert &and[Degree(D) le 18 : D in divisors_to_check];
+
+
+has_func_of_deg_at_most_7 := false;
+has_func_of_deg9 := false;
+deg8_func_pole_divisors := {};
+
+num_tasks := #divisors_to_check;
+start_time := Realtime();
+report_interval := Maximum(1, Floor(num_tasks / 200)); // roughly every 0.5%
+
+printf "Searching RR spaces for %o divisors...\n", num_tasks;
+
+SetColumns(200);
+
+for idx -> D in divisors_to_check do
+    R, m := RiemannRochSpace(D);
+
+    for f in R do
+        g := m(f);
+        deg_f := Degree(g);
+
+        if deg_f gt 0 and deg_f le 7 then
+            has_func_of_deg_at_most_7 := true;
+
+        elif deg_f eq 9 then
+            has_func_of_deg9 := true;
+
+        elif deg_f eq 8 then
+            pole_divisor := Denominator(Divisor(g));
+            Include(~deg8_func_pole_divisors, pole_divisor);
+        end if;
+    end for;
+
+    if idx mod report_interval eq 0 or idx eq num_tasks then
+        elapsed := Realtime() - start_time;
+        eta := (num_tasks - idx) * (elapsed / idx);
+        pct := (idx * 100.0) / num_tasks;
+
+        printf "%o/%o (%o%%) | elapsed=%os | ETA=%os | deg8 pole divisors=%o | <=7=%o | deg9=%o\n",
+            idx, num_tasks, RealField(4)!pct,
+            Floor(elapsed), Floor(eta),
+            #deg8_func_pole_divisors,
+            has_func_of_deg_at_most_7,
+            has_func_of_deg9;
+    end if;
+end for;
+
+printf "Finished RR search.\n";
+printf "has_func_of_deg_at_most_7 = %o\n", has_func_of_deg_at_most_7;
+printf "has_func_of_deg9 = %o\n", has_func_of_deg9;
+printf "#deg8_func_pole_divisors = %o\n", #deg8_func_pole_divisors;
+
+save "x1_32.ws";

@@ -51,6 +51,19 @@ b4 := 2*a4 + a1*a3;
 b6 := a3^2 + 4*a6;
 b8 := a1^2 * a6  + 4*a2*a6 - a1*a3*a4 + a2*a3^2 - a4^2;
 
+// TODO elaborate on DvH base
+f2 := b/(16*b^2+(1-20*c-8*c^2)*b+c*(c-1)^3);
+f3 := b;
+
+function cuspSignatureF23(cusp)
+    return [Valuation(f2, cusp), Valuation(f3, cusp)];
+end function;
+
+cuspSignatures := [cuspSignatureF23(c) : c in cusps_from_twogen];
+
+print cuspSignatures;
+
+
 Ebc_disc := -b2^2 * b8 - 8*b4^3 -27*b6^2 + 9 * b2 * b4 * b6;
 
 cusps := Support(Divisor(Ebc_disc));
