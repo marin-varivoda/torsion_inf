@@ -138,7 +138,7 @@ for D in deg8_func_pole_divisors do
     end if;
 end for;
 if not non_obtainable_divisor_exists then
-    printf "Successfully verified that all divisors in deg8_func_pole_divisors can be obtained by reducing a cusp-supported rational divisor.\n";
+    printf "Successfully verified that all divisors in deg8_func_pole_divisors can be obtained (up to equivalence) by reducing a cusp-supported rational divisor.\n";
 end if;
 
 deg8_func_pole_divisors_list := Setseq(deg8_func_pole_divisors);
