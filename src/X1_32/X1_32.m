@@ -1,97 +1,26 @@
+AttachSpec("../third_party/mdmagma/v2/mdmagma.spec");
+SetSeed(1337);
+SetColumns(200); // for prettier output without line wrapping
+
+N := 32;
 p := 3;
-A<x, y> := AffineSpace(GF(p), 2);
+C := MDX1(N, GF(p));
+FC := FunctionField(Curve(C));
+g := 17; // genus of X1(32)
 
-// Sutherland's FFc32.txt model from https://math.mit.edu/~drew/X1_altcurves.html
-f := x^11*y^5 - 2*x^11*y^4 + 2*x^11*y^3 - 5*x^10*y^6 + 7*x^10*y^5 - 6*x^10*y^4 - 
-    2*x^10*y^3 + 10*x^9*y^7 - 5*x^9*y^6 + 3*x^9*y^5 + 5*x^9*y^4 + 6*x^9*y^3 - 
-    4*x^9*y^2 - 10*x^8*y^8 - 10*x^8*y^7 + 5*x^8*y^6 - x^8*y^5 - 14*x^8*y^4 + 
-    6*x^8*y^3 + 4*x^8*y^2 + 5*x^7*y^9 + 20*x^7*y^8 - 5*x^7*y^6 + 5*x^7*y^4 - 
-    7*x^7*y^3 - 6*x^7*y^2 + 3*x^7*y - x^6*y^10 - 13*x^6*y^9 - 12*x^6*y^8 + 
-    20*x^6*y^6 - 4*x^6*y^5 + 3*x^6*y^4 + 3*x^6*y^3 + x^6*y^2 - 3*x^6*y + 
-    3*x^5*y^10 + 11*x^5*y^9 + 7*x^5*y^8 - 10*x^5*y^7 - 15*x^5*y^6 - 13*x^5*y^5 +
-    29*x^5*y^4 - 20*x^5*y^3 + 9*x^5*y^2 + x^5*y - x^5 - 3*x^4*y^10 - 5*x^4*y^9 -
-    6*x^4*y^8 + 14*x^4*y^7 + 25*x^4*y^6 - 33*x^4*y^5 + 16*x^4*y^4 - 12*x^4*y^3 +
-    3*x^4*y^2 + x^4*y + x^3*y^10 + 4*x^3*y^9 - 12*x^3*y^7 - 2*x^3*y^6 + 
-    7*x^3*y^5 + 8*x^3*y^4 - 4*x^3*y^3 - 3*x^3*y^2 + x^3*y - 2*x^2*y^9 + 
-    8*x^2*y^7 - 7*x^2*y^6 + 9*x^2*y^5 - 24*x^2*y^4 + 24*x^2*y^3 - 9*x^2*y^2 + 
-    x^2*y + x*y^8 - 11*x*y^6 + 25*x*y^5 - 25*x*y^4 + 14*x*y^3 - 5*x*y^2 + x*y - 
-    y^6 + 5*y^5 - 10*y^4 + 10*y^3 - 5*y^2 + y;
+cusps := Cusps(C);
+assert #cusps eq 18;
 
-C := ProjectiveClosure(Curve(A, f));
-F := FunctionField(C);
-printf "Successfully loaded curve.\n";
+// These are the divisors obtained by reducing cusp places of X1(32) over Q modulo p
+qcusps_reduced := CuspOrbitsQ(C);
 
-
-// Coerce x and y to F before loading qcusps_twogen32.m
-x := F ! x;
-y := F ! y;
-load "X1_32/qcusps_twogen_32.m";
-qcusp_num := #qcusps_twogen;
-printf "Successfully loaded twogen representation for %o rational cusp places.\n", #qcusps_twogen;
-
-
-// Compute cusps over F3
-r := (x^2*y - x*y + y - 1) / (x^2*y-x);
-s := (x*y - y + 1) / (x*y);
-
-b := r * s * (r-1);
-c := s * (r-1);
-
-a1 := 1-c;
-a2 := -b;
-a3 := -b;
-a4 := 0;
-a6 := 0;
-C := ProjectiveClosure(Curve(A, f));
-F := FunctionField(C);
-
-
-b2 := a1^2 + 4 * a2;
-b4 := 2*a4 + a1*a3;
-b6 := a3^2 + 4*a6;
-b8 := a1^2 * a6  + 4*a2*a6 - a1*a3*a4 + a2*a3^2 - a4^2;
-
-Ebc_disc := -b2^2 * b8 - 8*b4^3 -27*b6^2 + 9 * b2 * b4 * b6;
-
-cusps := Support(Divisor(Ebc_disc));
-printf "Computed total of %o cusp places over finite field with %o elements.\n", #cusps, p;
-
-
-/**
- *  For a cusp place on X1(32) over F_p, returns the index i in [1..#qcusps_twogen] of
- *  the unique rational cusp place that "lies over it", in the sense that the divisor obtained
- *  by reducing the rational cusp place over F_p is >= cusp.
- */
-function LabelCusp(cusp)
-    labels := [];
-
-    for i in [1..#qcusps_twogen] do
-        g1 := qcusps_twogen[i][1];
-        g2 := qcusps_twogen[i][2];
-
-
-
-        if Valuation(g1, cusp) gt 0 and Valuation(g2, cusp) gt 0 then
-            Append(~labels, i);
-        end if;
-    end for;
-
-    print labels;
-    return labels[1];
-
-    error "Unable to label cusp. This shouldn't mathematically be possible, check for code errors.";
-end function;
-
-// Compute divisors obtained by reducing rational cusp places modulo p
-NULL_DIVISOR := cusps[1] - cusps[1];
-qcusps_reduced := [NULL_DIVISOR : x in [1..qcusp_num]];
-
-for cusp in cusps do
-    label := LabelCusp(cusp);
-    cusp_deg := Degree(cusp);
-    qcusps_reduced[label] := qcusps_reduced[label] + cusp;
-end for;
-printf "Computed divisors over F%o obtained by reducing rational cusp places.\n", p;
+// there are 17 rational cusps: 12 of deg 1, 2 of deg 2, 2 of degree 4 and 1 of degree 8
+// we do some sanity checks here
+assert #qcusps_reduced eq 17; 
+assert #[D : D in qcusps_reduced | Degree(D) eq 1] eq 12;
+assert #[D : D in qcusps_reduced | Degree(D) eq 2] eq 2;
+assert #[D : D in qcusps_reduced | Degree(D) eq 4] eq 2;
+assert #[D : D in qcusps_reduced | Degree(D) eq 8] eq 1;
 
 
 cg, mapCgToDiv, mapDivToCg := ClassGroup(C);
@@ -100,8 +29,8 @@ cg, mapCgToDiv, mapDivToCg := ClassGroup(C);
 qcuspsCgImage := mapDivToCg(qcusps_reduced);
 qcuspsCgSubgrp, mapQCuspSubgrpToCg := sub<cg | qcuspsCgImage>;
 
-
-places := [Places(C, i) : i in [1..9]];
+// Calculate all places of degree up to 9 on C
+places := [Places(Curve(C), i) : i in [1..9]];
 places_count := [#places[i] : i in [1..9]];
 assert places_count eq [12, 4, 8, 9, 16, 140, 312, 901, 1976];
 
@@ -116,9 +45,7 @@ function LoadCover(filename, places)
 
         D := places[1][1] - places[1][1];
 
-        // Example:
-        // P_1_2,P_1_2,P_3_7
-        // becomes ["P", "1", "2", "P", "1", "2", "P", "3", "7"].
+        // Example: P_1_2,P_1_2,P_3_7 becomes ["P", "1", "2", "P", "1", "2", "P", "3", "7"].
         parts := Split(line, ",_");
         assert #parts mod 3 eq 0;
 
@@ -137,24 +64,29 @@ function LoadCover(filename, places)
     return T;
 end function;
 
+// We load a set of divisors that covers all degree 9 effective divisors. In other words,
+// if D >= 0 is a divisor of degree 9, then there exists E \in divisors_to_check such that D <= E
 divisors_to_check := LoadCover("X1_32/deg9_divisors_cover.txt", places);
 
 printf "Loaded %o covering divisors.\n", #divisors_to_check;
 assert #divisors_to_check eq 22606;
-assert &and[Degree(D) le 18 : D in divisors_to_check];
+// to make RR space search fast we want degree of each divisor in covering set to not be much greater than genus
+assert &and[Degree(D) le 18 : D in divisors_to_check]; 
 
 
+
+// Perform RR search
+// - We will show that all non-constant functions f of degree <= 9, have degree 8
+// - We find all possible pole divisors of degree 8 function
 has_func_of_deg_at_most_7 := false;
 has_func_of_deg9 := false;
 deg8_func_pole_divisors := {};
 
+printf "Searching RR spaces for %o divisors...\n", #divisors_to_check;
+
 num_tasks := #divisors_to_check;
 start_time := Realtime();
 report_interval := Maximum(1, Floor(num_tasks / 200)); // roughly every 0.5%
-
-printf "Searching RR spaces for %o divisors...\n", num_tasks;
-
-SetColumns(200);
 
 for idx -> D in divisors_to_check do
     R, m := RiemannRochSpace(D);
@@ -194,4 +126,40 @@ printf "has_func_of_deg_at_most_7 = %o\n", has_func_of_deg_at_most_7;
 printf "has_func_of_deg9 = %o\n", has_func_of_deg9;
 printf "#deg8_func_pole_divisors = %o\n", #deg8_func_pole_divisors;
 
-save "x1_32.ws";
+
+// Verify that all degree 8 divisors can be obtained (up to equivalence) by reducing a cusp-supported rational divisor
+non_obtainable_divisor_exists := false;
+for D in deg8_func_pole_divisors do
+    D_class := mapDivToCg(D);
+    if not D_class in qcuspsCgSubgrp then
+        non_obtainable_divisor_exists := true;
+        error "Unexpectedly found degree 8 function pole divisor which can't be obtained by reducing a cusp-supported rational divisor.\n";
+        break;
+    end if;
+end for;
+if not non_obtainable_divisor_exists then
+    printf "Successfully verified that all divisors in deg8_func_pole_divisors can be obtained by reducing a cusp-supported rational divisor.\n";
+end if;
+
+deg8_func_pole_divisors_list := Setseq(deg8_func_pole_divisors);
+assert #deg8_func_pole_divisors eq 56;
+
+min_lcm_degree := 10000;
+for i in [1..#deg8_func_pole_divisors_list] do
+    for j in [(i+1)..#deg8_func_pole_divisors_list] do
+        A := deg8_func_pole_divisors_list[i];
+        B := deg8_func_pole_divisors_list[j];
+
+        D := LCM(A, B);  // smallest divisor with D >= A and D >= B
+        assert D ge A;
+        assert D ge B;
+
+        min_lcm_degree := Min(min_lcm_degree, Degree(D));
+    end for;
+end for;
+
+assert min_lcm_degree gt 9;
+printf "Successfully verified that for all distinct A, B in deg8_func_pole_divisors, Degree(LCM(A,B)) > 9.\n";
+printf "Minimum Degree(LCM(A,B)) value found was %o.\n", min_lcm_degree;
+
+exit;

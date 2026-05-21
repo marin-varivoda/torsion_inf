@@ -1,0 +1,756 @@
+2093501 execve("/usr/local/bin/magma", ["magma", "test2.m"], 0x7fff96a1b190 /* 22 vars */) = 0
+2093501 brk(NULL)                       = 0x55d9c6902000
+2093501 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x781bca463000
+2093501 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+2093501 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+2093501 fstat(3, {st_mode=S_IFREG|0644, st_size=24887, ...}) = 0
+2093501 mmap(NULL, 24887, PROT_READ, MAP_PRIVATE, 3, 0) = 0x781bca45c000
+2093501 close(3)                        = 0
+2093501 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+2093501 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\243\2\0\0\0\0\0"..., 832) = 832
+2093501 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2093501 fstat(3, {st_mode=S_IFREG|0755, st_size=2125328, ...}) = 0
+2093501 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2093501 mmap(NULL, 2170256, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x781bca200000
+2093501 mmap(0x781bca228000, 1605632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x781bca228000
+2093501 mmap(0x781bca3b0000, 323584, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b0000) = 0x781bca3b0000
+2093501 mmap(0x781bca3ff000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1fe000) = 0x781bca3ff000
+2093501 mmap(0x781bca405000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x781bca405000
+2093501 close(3)                        = 0
+2093501 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x781bca459000
+2093501 arch_prctl(ARCH_SET_FS, 0x781bca459740) = 0
+2093501 set_tid_address(0x781bca459a10) = 2093501
+2093501 set_robust_list(0x781bca459a20, 24) = 0
+2093501 rseq(0x781bca45a060, 0x20, 0, 0x53053053) = 0
+2093501 mprotect(0x781bca3ff000, 16384, PROT_READ) = 0
+2093501 mprotect(0x55d986a67000, 8192, PROT_READ) = 0
+2093501 mprotect(0x781bca49b000, 8192, PROT_READ) = 0
+2093501 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+2093501 munmap(0x781bca45c000, 24887)   = 0
+2093501 getuid()                        = 1004
+2093501 getgid()                        = 1004
+2093501 getpid()                        = 2093501
+2093501 rt_sigaction(SIGCHLD, {sa_handler=0x55d986a5ccd0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x781bca245330}, NULL, 8) = 0
+2093501 geteuid()                       = 1004
+2093501 getrandom("\x62\xc6\xe3\x1c\x61\x49\x91\x5e", 8, GRND_NONBLOCK) = 8
+2093501 brk(NULL)                       = 0x55d9c6902000
+2093501 brk(0x55d9c6923000)             = 0x55d9c6923000
+2093501 getppid()                       = 2093498
+2093501 newfstatat(AT_FDCWD, "/home/mvarivoda", {st_mode=S_IFDIR|0750, st_size=4096, ...}, 0) = 0
+2093501 newfstatat(AT_FDCWD, ".", {st_mode=S_IFDIR|0750, st_size=4096, ...}, 0) = 0
+2093501 openat(AT_FDCWD, "/usr/local/bin/magma", O_RDONLY) = 3
+2093501 fcntl(3, F_DUPFD, 10)           = 10
+2093501 close(3)                        = 0
+2093501 fcntl(10, F_SETFD, FD_CLOEXEC)  = 0
+2093501 geteuid()                       = 1004
+2093501 getegid()                       = 1004
+2093501 rt_sigaction(SIGINT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+2093501 rt_sigaction(SIGINT, {sa_handler=0x55d986a5ccd0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x781bca245330}, NULL, 8) = 0
+2093501 rt_sigaction(SIGQUIT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+2093501 rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x781bca245330}, NULL, 8) = 0
+2093501 rt_sigaction(SIGTERM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+2093501 rt_sigaction(SIGTERM, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x781bca245330}, NULL, 8) = 0
+2093501 read(10, "#!/bin/sh\n\nROOT=\"$(dirname \"$(re"..., 8192) = 1832
+2093501 pipe2([3, 4], 0)                = 0
+2093501 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x781bca459a10) = 2093502
+2093501 close(4)                        = 0
+2093501 read(3,  <unfinished ...>
+2093502 set_robust_list(0x781bca459a20, 24) = 0
+2093502 close(10)                       = 0
+2093502 close(3)                        = 0
+2093502 dup2(4, 1)                      = 1
+2093502 close(4)                        = 0
+2093502 pipe2([3, 4], 0)                = 0
+2093502 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x781bca459a10) = 2093503
+2093502 close(4)                        = 0
+2093502 read(3,  <unfinished ...>
+2093503 set_robust_list(0x781bca459a20, 24) = 0
+2093503 close(3)                        = 0
+2093503 dup2(4, 1)                      = 1
+2093503 close(4)                        = 0
+2093503 newfstatat(AT_FDCWD, "/usr/local/sbin/readlink", 0x7ffd0df2d310, 0) = -1 ENOENT (No such file or directory)
+2093503 newfstatat(AT_FDCWD, "/usr/local/bin/readlink", 0x7ffd0df2d310, 0) = -1 ENOENT (No such file or directory)
+2093503 newfstatat(AT_FDCWD, "/usr/sbin/readlink", 0x7ffd0df2d310, 0) = -1 ENOENT (No such file or directory)
+2093503 newfstatat(AT_FDCWD, "/usr/bin/readlink", {st_mode=S_IFREG|0755, st_size=43432, ...}, 0) = 0
+2093503 execve("/usr/bin/readlink", ["readlink", "-f", "/usr/local/bin/magma"], 0x55d9c69028a0 /* 22 vars */) = 0
+2093503 brk(NULL)                       = 0x5768d0916000
+2093503 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1ba432b000
+2093503 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+2093503 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+2093503 fstat(3, {st_mode=S_IFREG|0644, st_size=24887, ...}) = 0
+2093503 mmap(NULL, 24887, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f1ba4324000
+2093503 close(3)                        = 0
+2093503 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+2093503 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\243\2\0\0\0\0\0"..., 832) = 832
+2093503 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2093503 fstat(3, {st_mode=S_IFREG|0755, st_size=2125328, ...}) = 0
+2093503 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2093503 mmap(NULL, 2170256, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f1ba4000000
+2093503 mmap(0x7f1ba4028000, 1605632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f1ba4028000
+2093503 mmap(0x7f1ba41b0000, 323584, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b0000) = 0x7f1ba41b0000
+2093503 mmap(0x7f1ba41ff000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1fe000) = 0x7f1ba41ff000
+2093503 mmap(0x7f1ba4205000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f1ba4205000
+2093503 close(3)                        = 0
+2093503 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1ba4321000
+2093503 arch_prctl(ARCH_SET_FS, 0x7f1ba4321740) = 0
+2093503 set_tid_address(0x7f1ba4321a10) = 2093503
+2093503 set_robust_list(0x7f1ba4321a20, 24) = 0
+2093503 rseq(0x7f1ba4322060, 0x20, 0, 0x53053053) = 0
+2093503 mprotect(0x7f1ba41ff000, 16384, PROT_READ) = 0
+2093503 mprotect(0x5768bb2c0000, 4096, PROT_READ) = 0
+2093503 mprotect(0x7f1ba4363000, 8192, PROT_READ) = 0
+2093503 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+2093503 munmap(0x7f1ba4324000, 24887)   = 0
+2093503 getrandom("\x17\x57\x56\xa1\x87\x72\xbe\x19", 8, GRND_NONBLOCK) = 8
+2093503 brk(NULL)                       = 0x5768d0916000
+2093503 brk(0x5768d0937000)             = 0x5768d0937000
+2093503 openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+2093503 fstat(3, {st_mode=S_IFREG|0644, st_size=6009088, ...}) = 0
+2093503 mmap(NULL, 6009088, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f1ba3a00000
+2093503 close(3)                        = 0
+2093503 readlink("/usr", 0x7ffe1fdcc270, 1023) = -1 EINVAL (Invalid argument)
+2093503 readlink("/usr/local", 0x7ffe1fdcc270, 1023) = -1 EINVAL (Invalid argument)
+2093503 readlink("/usr/local/bin", 0x7ffe1fdcc270, 1023) = -1 EINVAL (Invalid argument)
+2093503 readlink("/usr/local/bin/magma", "/opt/magma-2.29-4/magma", 1023) = 23
+2093503 readlink("/opt", 0x7ffe1fdcc270, 1023) = -1 EINVAL (Invalid argument)
+2093503 readlink("/opt/magma-2.29-4", 0x7ffe1fdcc270, 1023) = -1 EINVAL (Invalid argument)
+2093503 readlink("/opt/magma-2.29-4/magma", 0x7ffe1fdcc270, 1023) = -1 EINVAL (Invalid argument)
+2093503 fstat(1, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+2093503 write(1, "/opt/magma-2.29-4/magma\n", 24) = 24
+2093502 <... read resumed>"/opt/magma-2.29-4/magma\n", 128) = 24
+2093503 close(1 <unfinished ...>
+2093502 read(3,  <unfinished ...>
+2093503 <... close resumed>)            = 0
+2093502 <... read resumed>"", 128)      = 0
+2093503 close(2 <unfinished ...>
+2093502 close(3 <unfinished ...>
+2093503 <... close resumed>)            = 0
+2093502 <... close resumed>)            = 0
+2093503 exit_group(0 <unfinished ...>
+2093502 wait4(-1,  <unfinished ...>
+2093503 <... exit_group resumed>)       = ?
+2093503 +++ exited with 0 +++
+2093502 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 2093503
+2093502 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=2093503, si_uid=1004, si_status=0, si_utime=0, si_stime=0} ---
+2093502 rt_sigreturn({mask=[]})         = 2093503
+2093502 wait4(-1, 0x7ffd0df2d3dc, WNOHANG, NULL) = -1 ECHILD (No child processes)
+2093502 newfstatat(AT_FDCWD, "/usr/local/sbin/dirname", 0x7ffd0df2d5e0, 0) = -1 ENOENT (No such file or directory)
+2093502 newfstatat(AT_FDCWD, "/usr/local/bin/dirname", 0x7ffd0df2d5e0, 0) = -1 ENOENT (No such file or directory)
+2093502 newfstatat(AT_FDCWD, "/usr/sbin/dirname", 0x7ffd0df2d5e0, 0) = -1 ENOENT (No such file or directory)
+2093502 newfstatat(AT_FDCWD, "/usr/bin/dirname", {st_mode=S_IFREG|0755, st_size=35208, ...}, 0) = 0
+2093502 execve("/usr/bin/dirname", ["dirname", "/opt/magma-2.29-4/magma"], 0x55d9c6902888 /* 22 vars */) = 0
+2093502 brk(NULL)                       = 0x5fc5e0839000
+2093502 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7648a8665000
+2093502 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+2093502 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+2093502 fstat(3, {st_mode=S_IFREG|0644, st_size=24887, ...}) = 0
+2093502 mmap(NULL, 24887, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7648a865e000
+2093502 close(3)                        = 0
+2093502 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+2093502 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\243\2\0\0\0\0\0"..., 832) = 832
+2093502 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2093502 fstat(3, {st_mode=S_IFREG|0755, st_size=2125328, ...}) = 0
+2093502 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2093502 mmap(NULL, 2170256, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7648a8400000
+2093502 mmap(0x7648a8428000, 1605632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7648a8428000
+2093502 mmap(0x7648a85b0000, 323584, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b0000) = 0x7648a85b0000
+2093502 mmap(0x7648a85ff000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1fe000) = 0x7648a85ff000
+2093502 mmap(0x7648a8605000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7648a8605000
+2093502 close(3)                        = 0
+2093502 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7648a865b000
+2093502 arch_prctl(ARCH_SET_FS, 0x7648a865b740) = 0
+2093502 set_tid_address(0x7648a865ba10) = 2093502
+2093502 set_robust_list(0x7648a865ba20, 24) = 0
+2093502 rseq(0x7648a865c060, 0x20, 0, 0x53053053) = 0
+2093502 mprotect(0x7648a85ff000, 16384, PROT_READ) = 0
+2093502 mprotect(0x5fc5a3a42000, 4096, PROT_READ) = 0
+2093502 mprotect(0x7648a869d000, 8192, PROT_READ) = 0
+2093502 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+2093502 munmap(0x7648a865e000, 24887)   = 0
+2093502 getrandom("\x25\xd6\x40\x1e\x24\x8b\x48\xb9", 8, GRND_NONBLOCK) = 8
+2093502 brk(NULL)                       = 0x5fc5e0839000
+2093502 brk(0x5fc5e085a000)             = 0x5fc5e085a000
+2093502 openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+2093502 fstat(3, {st_mode=S_IFREG|0644, st_size=6009088, ...}) = 0
+2093502 mmap(NULL, 6009088, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7648a7e00000
+2093502 close(3)                        = 0
+2093502 fstat(1, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+2093502 write(1, "/opt/magma-2.29-4\n", 18 <unfinished ...>
+2093501 <... read resumed>"/opt/magma-2.29-4\n", 128) = 18
+2093502 <... write resumed>)            = 18
+2093501 read(3,  <unfinished ...>
+2093502 close(1)                        = 0
+2093501 <... read resumed>"", 128)      = 0
+2093502 close(2 <unfinished ...>
+2093501 close(3 <unfinished ...>
+2093502 <... close resumed>)            = 0
+2093501 <... close resumed>)            = 0
+2093502 exit_group(0 <unfinished ...>
+2093501 wait4(-1,  <unfinished ...>
+2093502 <... exit_group resumed>)       = ?
+2093502 +++ exited with 0 +++
+2093501 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 2093502
+2093501 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=2093502, si_uid=1004, si_status=0, si_utime=0, si_stime=0} ---
+2093501 rt_sigreturn({mask=[]})         = 2093502
+2093501 wait4(-1, 0x7ffd0df2d6ac, WNOHANG, NULL) = -1 ECHILD (No child processes)
+2093501 pipe2([3, 4], 0)                = 0
+2093501 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x781bca459a10) = 2093504
+2093501 close(4)                        = 0
+2093501 read(3,  <unfinished ...>
+2093504 set_robust_list(0x781bca459a20, 24) = 0
+2093504 close(10)                       = 0
+2093504 close(3)                        = 0
+2093504 dup2(4, 1)                      = 1
+2093504 close(4)                        = 0
+2093504 openat(AT_FDCWD, "/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+2093504 fcntl(2, F_DUPFD, 10)           = 10
+2093504 close(2)                        = 0
+2093504 fcntl(10, F_SETFD, FD_CLOEXEC)  = 0
+2093504 dup2(3, 2)                      = 2
+2093504 close(3)                        = 0
+2093504 newfstatat(AT_FDCWD, "/usr/local/sbin/readlink", 0x7ffd0df2d570, 0) = -1 ENOENT (No such file or directory)
+2093504 newfstatat(AT_FDCWD, "/usr/local/bin/readlink", 0x7ffd0df2d570, 0) = -1 ENOENT (No such file or directory)
+2093504 newfstatat(AT_FDCWD, "/usr/sbin/readlink", 0x7ffd0df2d570, 0) = -1 ENOENT (No such file or directory)
+2093504 newfstatat(AT_FDCWD, "/usr/bin/readlink", {st_mode=S_IFREG|0755, st_size=43432, ...}, 0) = 0
+2093504 execve("/usr/bin/readlink", ["readlink", "-f", "--", "/usr/local/bin/magma"], 0x55d9c6902f08 /* 22 vars */) = 0
+2093504 brk(NULL)                       = 0x58829cd45000
+2093504 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x754ee0ec3000
+2093504 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+2093504 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+2093504 fstat(3, {st_mode=S_IFREG|0644, st_size=24887, ...}) = 0
+2093504 mmap(NULL, 24887, PROT_READ, MAP_PRIVATE, 3, 0) = 0x754ee0ebc000
+2093504 close(3)                        = 0
+2093504 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+2093504 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\243\2\0\0\0\0\0"..., 832) = 832
+2093504 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2093504 fstat(3, {st_mode=S_IFREG|0755, st_size=2125328, ...}) = 0
+2093504 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2093504 mmap(NULL, 2170256, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x754ee0c00000
+2093504 mmap(0x754ee0c28000, 1605632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x754ee0c28000
+2093504 mmap(0x754ee0db0000, 323584, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b0000) = 0x754ee0db0000
+2093504 mmap(0x754ee0dff000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1fe000) = 0x754ee0dff000
+2093504 mmap(0x754ee0e05000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x754ee0e05000
+2093504 close(3)                        = 0
+2093504 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x754ee0eb9000
+2093504 arch_prctl(ARCH_SET_FS, 0x754ee0eb9740) = 0
+2093504 set_tid_address(0x754ee0eb9a10) = 2093504
+2093504 set_robust_list(0x754ee0eb9a20, 24) = 0
+2093504 rseq(0x754ee0eba060, 0x20, 0, 0x53053053) = 0
+2093504 mprotect(0x754ee0dff000, 16384, PROT_READ) = 0
+2093504 mprotect(0x5882984a4000, 4096, PROT_READ) = 0
+2093504 mprotect(0x754ee0efb000, 8192, PROT_READ) = 0
+2093504 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+2093504 munmap(0x754ee0ebc000, 24887)   = 0
+2093504 getrandom("\xe6\x21\x08\x09\x73\x2b\xec\x84", 8, GRND_NONBLOCK) = 8
+2093504 brk(NULL)                       = 0x58829cd45000
+2093504 brk(0x58829cd66000)             = 0x58829cd66000
+2093504 openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+2093504 fstat(3, {st_mode=S_IFREG|0644, st_size=6009088, ...}) = 0
+2093504 mmap(NULL, 6009088, PROT_READ, MAP_PRIVATE, 3, 0) = 0x754ee0600000
+2093504 close(3)                        = 0
+2093504 readlink("/usr", 0x7ffd96949970, 1023) = -1 EINVAL (Invalid argument)
+2093504 readlink("/usr/local", 0x7ffd96949970, 1023) = -1 EINVAL (Invalid argument)
+2093504 readlink("/usr/local/bin", 0x7ffd96949970, 1023) = -1 EINVAL (Invalid argument)
+2093504 readlink("/usr/local/bin/magma", "/opt/magma-2.29-4/magma", 1023) = 23
+2093504 readlink("/opt", 0x7ffd96949970, 1023) = -1 EINVAL (Invalid argument)
+2093504 readlink("/opt/magma-2.29-4", 0x7ffd96949970, 1023) = -1 EINVAL (Invalid argument)
+2093504 readlink("/opt/magma-2.29-4/magma", 0x7ffd96949970, 1023) = -1 EINVAL (Invalid argument)
+2093504 fstat(1, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+2093504 write(1, "/opt/magma-2.29-4/magma\n", 24) = 24
+2093504 close(1 <unfinished ...>
+2093501 <... read resumed>"/opt/magma-2.29-4/magma\n", 128) = 24
+2093504 <... close resumed>)            = 0
+2093501 read(3,  <unfinished ...>
+2093504 close(2 <unfinished ...>
+2093501 <... read resumed>"", 128)      = 0
+2093504 <... close resumed>)            = 0
+2093501 close(3 <unfinished ...>
+2093504 exit_group(0)                   = ?
+2093501 <... close resumed>)            = 0
+2093501 wait4(-1,  <unfinished ...>
+2093504 +++ exited with 0 +++
+2093501 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 2093504
+2093501 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=2093504, si_uid=1004, si_status=0, si_utime=0, si_stime=0} ---
+2093501 rt_sigreturn({mask=[]})         = 2093504
+2093501 wait4(-1, 0x7ffd0df2d63c, WNOHANG, NULL) = -1 ECHILD (No child processes)
+2093501 pipe2([3, 4], 0)                = 0
+2093501 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x781bca459a10) = 2093505
+2093501 close(4)                        = 0
+2093501 read(3,  <unfinished ...>
+2093505 set_robust_list(0x781bca459a20, 24) = 0
+2093505 close(10)                       = 0
+2093505 close(3)                        = 0
+2093505 dup2(4, 1)                      = 1
+2093505 close(4)                        = 0
+2093505 newfstatat(AT_FDCWD, "/usr/local/sbin/dirname", 0x7ffd0df2d570, 0) = -1 ENOENT (No such file or directory)
+2093505 newfstatat(AT_FDCWD, "/usr/local/bin/dirname", 0x7ffd0df2d570, 0) = -1 ENOENT (No such file or directory)
+2093505 newfstatat(AT_FDCWD, "/usr/sbin/dirname", 0x7ffd0df2d570, 0) = -1 ENOENT (No such file or directory)
+2093505 newfstatat(AT_FDCWD, "/usr/bin/dirname", {st_mode=S_IFREG|0755, st_size=35208, ...}, 0) = 0
+2093505 execve("/usr/bin/dirname", ["dirname", "/opt/magma-2.29-4/magma"], 0x55d9c6902f78 /* 22 vars */) = 0
+2093505 brk(NULL)                       = 0x57c8e1fa1000
+2093505 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f958020b000
+2093505 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+2093505 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+2093505 fstat(3, {st_mode=S_IFREG|0644, st_size=24887, ...}) = 0
+2093505 mmap(NULL, 24887, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f9580204000
+2093505 close(3)                        = 0
+2093505 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+2093505 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\243\2\0\0\0\0\0"..., 832) = 832
+2093505 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2093505 fstat(3, {st_mode=S_IFREG|0755, st_size=2125328, ...}) = 0
+2093505 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2093505 mmap(NULL, 2170256, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f957fe00000
+2093505 mmap(0x7f957fe28000, 1605632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f957fe28000
+2093505 mmap(0x7f957ffb0000, 323584, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b0000) = 0x7f957ffb0000
+2093505 mmap(0x7f957ffff000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1fe000) = 0x7f957ffff000
+2093505 mmap(0x7f9580005000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f9580005000
+2093505 close(3)                        = 0
+2093505 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f9580201000
+2093505 arch_prctl(ARCH_SET_FS, 0x7f9580201740) = 0
+2093505 set_tid_address(0x7f9580201a10) = 2093505
+2093505 set_robust_list(0x7f9580201a20, 24) = 0
+2093505 rseq(0x7f9580202060, 0x20, 0, 0x53053053) = 0
+2093505 mprotect(0x7f957ffff000, 16384, PROT_READ) = 0
+2093505 mprotect(0x57c8b8226000, 4096, PROT_READ) = 0
+2093505 mprotect(0x7f9580243000, 8192, PROT_READ) = 0
+2093505 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+2093505 munmap(0x7f9580204000, 24887)   = 0
+2093505 getrandom("\x0c\xa2\xb5\x45\x3f\x4d\x56\xe9", 8, GRND_NONBLOCK) = 8
+2093505 brk(NULL)                       = 0x57c8e1fa1000
+2093505 brk(0x57c8e1fc2000)             = 0x57c8e1fc2000
+2093505 openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+2093505 fstat(3, {st_mode=S_IFREG|0644, st_size=6009088, ...}) = 0
+2093505 mmap(NULL, 6009088, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f957f800000
+2093505 close(3)                        = 0
+2093505 fstat(1, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+2093505 write(1, "/opt/magma-2.29-4\n", 18) = 18
+2093505 close(1 <unfinished ...>
+2093501 <... read resumed>"/opt/magma-2.29-4\n", 128) = 18
+2093505 <... close resumed>)            = 0
+2093501 read(3,  <unfinished ...>
+2093505 close(2 <unfinished ...>
+2093501 <... read resumed>"", 128)      = 0
+2093505 <... close resumed>)            = 0
+2093501 close(3 <unfinished ...>
+2093505 exit_group(0)                   = ?
+2093501 <... close resumed>)            = 0
+2093501 wait4(-1,  <unfinished ...>
+2093505 +++ exited with 0 +++
+2093501 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 2093505
+2093501 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=2093505, si_uid=1004, si_status=0, si_utime=0, si_stime=0} ---
+2093501 rt_sigreturn({mask=[]})         = 2093505
+2093501 wait4(-1, 0x7ffd0df2d63c, WNOHANG, NULL) = -1 ECHILD (No child processes)
+2093501 newfstatat(AT_FDCWD, "/opt/magma-2.29-4/magmapassfile", {st_mode=S_IFREG|0644, st_size=75, ...}, 0) = 0
+2093501 pipe2([3, 4], 0)                = 0
+2093501 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x781bca459a10) = 2093506
+2093501 close(4)                        = 0
+2093501 read(3,  <unfinished ...>
+2093506 set_robust_list(0x781bca459a20, 24) = 0
+2093506 close(10)                       = 0
+2093506 close(3)                        = 0
+2093506 dup2(4, 1)                      = 1
+2093506 close(4)                        = 0
+2093506 newfstatat(AT_FDCWD, "/usr/local/sbin/dirname", 0x7ffd0df2d5e0, 0) = -1 ENOENT (No such file or directory)
+2093506 newfstatat(AT_FDCWD, "/usr/local/bin/dirname", 0x7ffd0df2d5e0, 0) = -1 ENOENT (No such file or directory)
+2093506 newfstatat(AT_FDCWD, "/usr/sbin/dirname", 0x7ffd0df2d5e0, 0) = -1 ENOENT (No such file or directory)
+2093506 newfstatat(AT_FDCWD, "/usr/bin/dirname", {st_mode=S_IFREG|0755, st_size=35208, ...}, 0) = 0
+2093506 execve("/usr/bin/dirname", ["dirname", "/opt/magma-2.29-4/package/spec"], 0x55d9c6902898 /* 25 vars */) = 0
+2093506 brk(NULL)                       = 0x64f3d9fa7000
+2093506 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7e81a8222000
+2093506 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+2093506 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+2093506 fstat(3, {st_mode=S_IFREG|0644, st_size=24887, ...}) = 0
+2093506 mmap(NULL, 24887, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7e81a821b000
+2093506 close(3)                        = 0
+2093506 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+2093506 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\243\2\0\0\0\0\0"..., 832) = 832
+2093506 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2093506 fstat(3, {st_mode=S_IFREG|0755, st_size=2125328, ...}) = 0
+2093506 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2093506 mmap(NULL, 2170256, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7e81a8000000
+2093506 mmap(0x7e81a8028000, 1605632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7e81a8028000
+2093506 mmap(0x7e81a81b0000, 323584, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b0000) = 0x7e81a81b0000
+2093506 mmap(0x7e81a81ff000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1fe000) = 0x7e81a81ff000
+2093506 mmap(0x7e81a8205000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7e81a8205000
+2093506 close(3)                        = 0
+2093506 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7e81a8218000
+2093506 arch_prctl(ARCH_SET_FS, 0x7e81a8218740) = 0
+2093506 set_tid_address(0x7e81a8218a10) = 2093506
+2093506 set_robust_list(0x7e81a8218a20, 24) = 0
+2093506 rseq(0x7e81a8219060, 0x20, 0, 0x53053053) = 0
+2093506 mprotect(0x7e81a81ff000, 16384, PROT_READ) = 0
+2093506 mprotect(0x64f3a0575000, 4096, PROT_READ) = 0
+2093506 mprotect(0x7e81a825a000, 8192, PROT_READ) = 0
+2093506 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+2093506 munmap(0x7e81a821b000, 24887)   = 0
+2093506 getrandom("\x09\x2f\x90\x03\x8a\xda\x84\xe0", 8, GRND_NONBLOCK) = 8
+2093506 brk(NULL)                       = 0x64f3d9fa7000
+2093506 brk(0x64f3d9fc8000)             = 0x64f3d9fc8000
+2093506 openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+2093506 fstat(3, {st_mode=S_IFREG|0644, st_size=6009088, ...}) = 0
+2093506 mmap(NULL, 6009088, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7e81a7a00000
+2093506 close(3)                        = 0
+2093506 fstat(1, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+2093506 write(1, "/opt/magma-2.29-4/package\n", 26) = 26
+2093501 <... read resumed>"/opt/magma-2.29-4/package\n", 128) = 26
+2093506 close(1 <unfinished ...>
+2093501 read(3,  <unfinished ...>
+2093506 <... close resumed>)            = 0
+2093501 <... read resumed>"", 128)      = 0
+2093506 close(2 <unfinished ...>
+2093501 close(3 <unfinished ...>
+2093506 <... close resumed>)            = 0
+2093501 <... close resumed>)            = 0
+2093506 exit_group(0 <unfinished ...>
+2093501 wait4(-1,  <unfinished ...>
+2093506 <... exit_group resumed>)       = ?
+2093506 +++ exited with 0 +++
+2093501 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 2093506
+2093501 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=2093506, si_uid=1004, si_status=0, si_utime=0, si_stime=0} ---
+2093501 rt_sigreturn({mask=[]})         = 2093506
+2093501 wait4(-1, 0x7ffd0df2d6ac, WNOHANG, NULL) = -1 ECHILD (No child processes)
+2093501 newfstatat(AT_FDCWD, "/home/mvarivoda/.magmarc", 0x7ffd0df2d610, 0) = -1 ENOENT (No such file or directory)
+2093501 pipe2([3, 4], 0)                = 0
+2093501 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x781bca459a10) = 2093507
+2093501 close(4)                        = 0
+2093501 read(3,  <unfinished ...>
+2093507 set_robust_list(0x781bca459a20, 24) = 0
+2093507 close(10)                       = 0
+2093507 close(3)                        = 0
+2093507 dup2(4, 1)                      = 1
+2093507 close(4)                        = 0
+2093507 newfstatat(AT_FDCWD, "/usr/local/sbin/uname", 0x7ffd0df2d570, 0) = -1 ENOENT (No such file or directory)
+2093507 newfstatat(AT_FDCWD, "/usr/local/bin/uname", 0x7ffd0df2d570, 0) = -1 ENOENT (No such file or directory)
+2093507 newfstatat(AT_FDCWD, "/usr/sbin/uname", 0x7ffd0df2d570, 0) = -1 ENOENT (No such file or directory)
+2093507 newfstatat(AT_FDCWD, "/usr/bin/uname", {st_mode=S_IFREG|0755, st_size=35336, ...}, 0) = 0
+2093507 execve("/usr/bin/uname", ["uname"], 0x55d9c6902d68 /* 30 vars */) = 0
+2093507 brk(NULL)                       = 0x583dfdc11000
+2093507 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7c80e159e000
+2093507 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+2093507 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+2093507 fstat(3, {st_mode=S_IFREG|0644, st_size=24887, ...}) = 0
+2093507 mmap(NULL, 24887, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7c80e1597000
+2093507 close(3)                        = 0
+2093507 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+2093507 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\243\2\0\0\0\0\0"..., 832) = 832
+2093507 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2093507 fstat(3, {st_mode=S_IFREG|0755, st_size=2125328, ...}) = 0
+2093507 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2093507 mmap(NULL, 2170256, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7c80e1200000
+2093507 mmap(0x7c80e1228000, 1605632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7c80e1228000
+2093507 mmap(0x7c80e13b0000, 323584, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b0000) = 0x7c80e13b0000
+2093507 mmap(0x7c80e13ff000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1fe000) = 0x7c80e13ff000
+2093507 mmap(0x7c80e1405000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7c80e1405000
+2093507 close(3)                        = 0
+2093507 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7c80e1594000
+2093507 arch_prctl(ARCH_SET_FS, 0x7c80e1594740) = 0
+2093507 set_tid_address(0x7c80e1594a10) = 2093507
+2093507 set_robust_list(0x7c80e1594a20, 24) = 0
+2093507 rseq(0x7c80e1595060, 0x20, 0, 0x53053053) = 0
+2093507 mprotect(0x7c80e13ff000, 16384, PROT_READ) = 0
+2093507 mprotect(0x583dcd4f8000, 4096, PROT_READ) = 0
+2093507 mprotect(0x7c80e15d6000, 8192, PROT_READ) = 0
+2093507 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+2093507 munmap(0x7c80e1597000, 24887)   = 0
+2093507 getrandom("\x62\x48\x3b\xcb\x4a\x6f\xa9\x58", 8, GRND_NONBLOCK) = 8
+2093507 brk(NULL)                       = 0x583dfdc11000
+2093507 brk(0x583dfdc32000)             = 0x583dfdc32000
+2093507 openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+2093507 fstat(3, {st_mode=S_IFREG|0644, st_size=6009088, ...}) = 0
+2093507 mmap(NULL, 6009088, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7c80e0c00000
+2093507 close(3)                        = 0
+2093507 uname({sysname="Linux", nodename="mordell", ...}) = 0
+2093507 fstat(1, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+2093507 write(1, "Linux\n", 6)          = 6
+2093507 close(1 <unfinished ...>
+2093501 <... read resumed>"Linux\n", 128) = 6
+2093507 <... close resumed>)            = 0
+2093501 read(3,  <unfinished ...>
+2093507 close(2 <unfinished ...>
+2093501 <... read resumed>"", 128)      = 0
+2093507 <... close resumed>)            = 0
+2093501 close(3 <unfinished ...>
+2093507 exit_group(0)                   = ?
+2093501 <... close resumed>)            = 0
+2093501 wait4(-1,  <unfinished ...>
+2093507 +++ exited with 0 +++
+2093501 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 2093507
+2093501 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=2093507, si_uid=1004, si_status=0, si_utime=0, si_stime=0} ---
+2093501 rt_sigreturn({mask=[]})         = 2093507
+2093501 wait4(-1, 0x7ffd0df2d63c, WNOHANG, NULL) = -1 ECHILD (No child processes)
+2093501 pipe2([3, 4], 0)                = 0
+2093501 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x781bca459a10) = 2093508
+2093501 close(4)                        = 0
+2093501 read(3,  <unfinished ...>
+2093508 set_robust_list(0x781bca459a20, 24) = 0
+2093508 close(10)                       = 0
+2093508 close(3)                        = 0
+2093508 dup2(4, 1)                      = 1
+2093508 close(4)                        = 0
+2093508 newfstatat(AT_FDCWD, "/usr/local/sbin/uname", 0x7ffd0df2d500, 0) = -1 ENOENT (No such file or directory)
+2093508 newfstatat(AT_FDCWD, "/usr/local/bin/uname", 0x7ffd0df2d500, 0) = -1 ENOENT (No such file or directory)
+2093508 newfstatat(AT_FDCWD, "/usr/sbin/uname", 0x7ffd0df2d500, 0) = -1 ENOENT (No such file or directory)
+2093508 newfstatat(AT_FDCWD, "/usr/bin/uname", {st_mode=S_IFREG|0755, st_size=35336, ...}, 0) = 0
+2093508 execve("/usr/bin/uname", ["uname"], 0x55d9c6902d68 /* 30 vars */) = 0
+2093508 brk(NULL)                       = 0x5908bb8f3000
+2093508 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x763fc5ab8000
+2093508 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+2093508 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+2093508 fstat(3, {st_mode=S_IFREG|0644, st_size=24887, ...}) = 0
+2093508 mmap(NULL, 24887, PROT_READ, MAP_PRIVATE, 3, 0) = 0x763fc5ab1000
+2093508 close(3)                        = 0
+2093508 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+2093508 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\243\2\0\0\0\0\0"..., 832) = 832
+2093508 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2093508 fstat(3, {st_mode=S_IFREG|0755, st_size=2125328, ...}) = 0
+2093508 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2093508 mmap(NULL, 2170256, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x763fc5800000
+2093508 mmap(0x763fc5828000, 1605632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x763fc5828000
+2093508 mmap(0x763fc59b0000, 323584, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b0000) = 0x763fc59b0000
+2093508 mmap(0x763fc59ff000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1fe000) = 0x763fc59ff000
+2093508 mmap(0x763fc5a05000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x763fc5a05000
+2093508 close(3)                        = 0
+2093508 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x763fc5aae000
+2093508 arch_prctl(ARCH_SET_FS, 0x763fc5aae740) = 0
+2093508 set_tid_address(0x763fc5aaea10) = 2093508
+2093508 set_robust_list(0x763fc5aaea20, 24) = 0
+2093508 rseq(0x763fc5aaf060, 0x20, 0, 0x53053053) = 0
+2093508 mprotect(0x763fc59ff000, 16384, PROT_READ) = 0
+2093508 mprotect(0x5908a192f000, 4096, PROT_READ) = 0
+2093508 mprotect(0x763fc5af0000, 8192, PROT_READ) = 0
+2093508 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+2093508 munmap(0x763fc5ab1000, 24887)   = 0
+2093508 getrandom("\xbc\x97\xfe\x4d\xfb\xf8\x50\x10", 8, GRND_NONBLOCK) = 8
+2093508 brk(NULL)                       = 0x5908bb8f3000
+2093508 brk(0x5908bb914000)             = 0x5908bb914000
+2093508 openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+2093508 fstat(3, {st_mode=S_IFREG|0644, st_size=6009088, ...}) = 0
+2093508 mmap(NULL, 6009088, PROT_READ, MAP_PRIVATE, 3, 0) = 0x763fc5200000
+2093508 close(3)                        = 0
+2093508 uname({sysname="Linux", nodename="mordell", ...}) = 0
+2093508 fstat(1, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+2093508 write(1, "Linux\n", 6)          = 6
+2093508 close(1 <unfinished ...>
+2093501 <... read resumed>"Linux\n", 128) = 6
+2093508 <... close resumed>)            = 0
+2093501 read(3,  <unfinished ...>
+2093508 close(2 <unfinished ...>
+2093501 <... read resumed>"", 128)      = 0
+2093508 <... close resumed>)            = 0
+2093501 close(3 <unfinished ...>
+2093508 exit_group(0)                   = ?
+2093501 <... close resumed>)            = 0
+2093501 wait4(-1,  <unfinished ...>
+2093508 +++ exited with 0 +++
+2093501 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 2093508
+2093501 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=2093508, si_uid=1004, si_status=0, si_utime=0, si_stime=0} ---
+2093501 rt_sigreturn({mask=[]})         = 2093508
+2093501 wait4(-1, 0x7ffd0df2d5cc, WNOHANG, NULL) = -1 ECHILD (No child processes)
+2093501 execve("/opt/magma-2.29-4/magma.exe", ["/opt/magma-2.29-4/magma.exe", "test2.m"], 0x55d9c6902978 /* 33 vars */) = 0
+2093501 brk(NULL)                       = 0x2619a000
+2093501 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x71e3c5fc1000
+2093501 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+2093501 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+2093501 fstat(3, {st_mode=S_IFREG|0644, st_size=24887, ...}) = 0
+2093501 mmap(NULL, 24887, PROT_READ, MAP_PRIVATE, 3, 0) = 0x71e3c5fba000
+2093501 close(3)                        = 0
+2093501 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+2093501 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+2093501 fstat(3, {st_mode=S_IFREG|0644, st_size=952616, ...}) = 0
+2093501 mmap(NULL, 950296, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71e3c5ed1000
+2093501 mmap(0x71e3c5ee1000, 520192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x10000) = 0x71e3c5ee1000
+2093501 mmap(0x71e3c5f60000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8f000) = 0x71e3c5f60000
+2093501 mmap(0x71e3c5fb8000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe7000) = 0x71e3c5fb8000
+2093501 close(3)                        = 0
+2093501 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+2093501 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+2093501 fstat(3, {st_mode=S_IFREG|0644, st_size=14408, ...}) = 0
+2093501 mmap(NULL, 16400, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71e3c5ecc000
+2093501 mmap(0x71e3c5ecd000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x71e3c5ecd000
+2093501 mmap(0x71e3c5ece000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x71e3c5ece000
+2093501 mmap(0x71e3c5ecf000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x71e3c5ecf000
+2093501 close(3)                        = 0
+2093501 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 3
+2093501 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+2093501 fstat(3, {st_mode=S_IFREG|0644, st_size=183024, ...}) = 0
+2093501 mmap(NULL, 185256, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71e3c5e9e000
+2093501 mmap(0x71e3c5ea2000, 147456, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x71e3c5ea2000
+2093501 mmap(0x71e3c5ec6000, 16384, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x71e3c5ec6000
+2093501 mmap(0x71e3c5eca000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2b000) = 0x71e3c5eca000
+2093501 close(3)                        = 0
+2093501 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+2093501 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\243\2\0\0\0\0\0"..., 832) = 832
+2093501 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2093501 fstat(3, {st_mode=S_IFREG|0755, st_size=2125328, ...}) = 0
+2093501 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2093501 mmap(NULL, 2170256, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71e3c5c00000
+2093501 mmap(0x71e3c5c28000, 1605632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x71e3c5c28000
+2093501 mmap(0x71e3c5db0000, 323584, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b0000) = 0x71e3c5db0000
+2093501 mmap(0x71e3c5dff000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1fe000) = 0x71e3c5dff000
+2093501 mmap(0x71e3c5e05000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x71e3c5e05000
+2093501 close(3)                        = 0
+2093501 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+2093501 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+2093501 fstat(3, {st_mode=S_IFREG|0644, st_size=14408, ...}) = 0
+2093501 mmap(NULL, 16400, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71e3c5e99000
+2093501 mmap(0x71e3c5e9a000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x71e3c5e9a000
+2093501 mmap(0x71e3c5e9b000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x71e3c5e9b000
+2093501 mmap(0x71e3c5e9c000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x71e3c5e9c000
+2093501 close(3)                        = 0
+2093501 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x71e3c5e97000
+2093501 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x71e3c5e94000
+2093501 arch_prctl(ARCH_SET_FS, 0x71e3c5e94740) = 0
+2093501 set_tid_address(0x71e3c5e94a10) = 2093501
+2093501 set_robust_list(0x71e3c5e94a20, 24) = 0
+2093501 rseq(0x71e3c5e95060, 0x20, 0, 0x53053053) = 0
+2093501 mprotect(0x71e3c5dff000, 16384, PROT_READ) = 0
+2093501 mprotect(0x71e3c5e9c000, 4096, PROT_READ) = 0
+2093501 mprotect(0x71e3c5eca000, 4096, PROT_READ) = 0
+2093501 mprotect(0x71e3c5ecf000, 4096, PROT_READ) = 0
+2093501 mprotect(0x71e3c5fb8000, 4096, PROT_READ) = 0
+2093501 mprotect(0x3735000, 40960, PROT_READ) = 0
+2093501 mprotect(0x71e3c5ff9000, 8192, PROT_READ) = 0
+2093501 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+2093501 munmap(0x71e3c5fba000, 24887)   = 0
+2093501 getcwd("/home/mvarivoda", 4096) = 16
+2093501 getcwd("/home/mvarivoda", 4096) = 16
+2093501 getrandom("\x80\xe9\xae\x0c\x36\xcb\xe0\xf1", 8, GRND_NONBLOCK) = 8
+2093501 brk(NULL)                       = 0x2619a000
+2093501 brk(0x261bb000)                 = 0x261bb000
+2093501 openat(AT_FDCWD, "/proc/cpuinfo", O_RDONLY) = 3
+2093501 fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+2093501 read(3, "processor\t: 0\nvendor_id\t: Authen"..., 1024) = 1024
+2093501 close(3)                        = 0
+2093501 mmap(NULL, 33587200, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0x71e3c3bf8000
+2093501 mmap(NULL, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0x71e3c5e84000
+2093501 socket(AF_INET, SOCK_DGRAM, IPPROTO_IP) = 3
+2093501 openat(AT_FDCWD, "/proc/net/dev", O_RDONLY) = 4
+2093501 fstat(4, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+2093501 read(4, "Inter-|   Receive               "..., 1024) = 579
+2093501 ioctl(3, SIOCGIFHWADDR, {ifr_name="lo", ifr_hwaddr={sa_family=ARPHRD_LOOPBACK, sa_data=00:00:00:00:00:00}}) = 0
+2093501 ioctl(3, SIOCGIFHWADDR, {ifr_name="eno1", ifr_hwaddr={sa_family=ARPHRD_ETHER, sa_data=30:e2:71:00:66:ec}}) = 0
+2093501 ioctl(3, SIOCGIFHWADDR, {ifr_name="eth0", ifr_hwaddr={sa_family=ARPHRD_ETHER, sa_data=4c:52:62:28:cd:72}}) = 0
+2093501 read(4, "", 1024)               = 0
+2093501 openat(AT_FDCWD, "/etc/localtime", O_RDONLY|O_CLOEXEC) = 5
+2093501 fstat(5, {st_mode=S_IFREG|0644, st_size=1920, ...}) = 0
+2093501 fstat(5, {st_mode=S_IFREG|0644, st_size=1920, ...}) = 0
+2093501 read(5, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\7\0\0\0\7\0\0\0\0"..., 4096) = 1920
+2093501 lseek(5, -1212, SEEK_CUR)       = 708
+2093501 read(5, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\7\0\0\0\7\0\0\0\0"..., 4096) = 1212
+2093501 close(5)                        = 0
+2093501 ioctl(0, TIOCGWINSZ, {ws_row=60, ws_col=237, ws_xpixel=0, ws_ypixel=0}) = 0
+2093501 rt_sigaction(SIGWINCH, {sa_handler=0x19d5e70, sa_mask=[WINCH], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x71e3c5c45330}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+2093501 ioctl(0, TIOCGWINSZ, {ws_row=60, ws_col=237, ws_xpixel=0, ws_ypixel=0}) = 0
+2093501 rt_sigaction(SIGWINCH, {sa_handler=0x19d5e70, sa_mask=[WINCH], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x71e3c5c45330}, {sa_handler=0x19d5e70, sa_mask=[WINCH], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x71e3c5c45330}, 8) = 0
+2093501 times({tms_utime=0, tms_stime=0, tms_cutime=0, tms_cstime=0}) = 930560655
+2093501 rt_sigaction(SIGTSTP, {sa_handler=0x19d6090, sa_mask=[TSTP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x71e3c5c45330}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+2093501 openat(AT_FDCWD, "/opt/magma-2.29-4/magmapassfile", O_RDONLY) = 5
+2093501 fstat(5, {st_mode=S_IFREG|0644, st_size=75, ...}) = 0
+2093501 read(5, "26061608575117394302465158195041"..., 4096) = 75
+2093501 read(5, "", 4096)               = 0
+2093501 ioctl(0, TCGETS, {c_iflag=ICRNL|IXON|IUTF8, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B38400|CS8|CREAD, c_lflag=ISIG|ICANON|ECHO|ECHOE|ECHOK|IEXTEN|ECHOCTL|ECHOKE, ...}) = 0
+2093501 close(5)                        = 0
+2093501 getpid()                        = 2093501
+2093501 uname({sysname="Linux", nodename="mordell", ...}) = 0
+2093501 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+2093501 write(1, "Magma V2.29-4     Wed May  6 202"..., 74) = 74
+2093501 write(1, "Type ? for help.  Type <Ctrl>-D "..., 41) = 41
+2093501 openat(AT_FDCWD, "/opt/magma-2.29-4/package/VERSION", O_RDONLY) = 5
+2093501 fstat(5, {st_mode=S_IFREG|0644, st_size=7, ...}) = 0
+2093501 read(5, "2.29-4\n", 4096)       = 7
+2093501 close(5)                        = 0
+2093501 openat(AT_FDCWD, "test2.m", O_RDONLY) = 5
+2093501 fstat(5, {st_mode=S_IFREG|0664, st_size=1667, ...}) = 0
+2093501 ioctl(5, TCGETS, 0x7ffe90835fb0) = -1 ENOTTY (Inappropriate ioctl for device)
+2093501 write(1, "\n", 1)               = 1
+2093501 write(1, "Loading file \"test2.m\"\n", 23) = 23
+2093501 rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x71e3c5c45330}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+2093501 rt_sigaction(SIGSEGV, {sa_handler=0xff7470, sa_mask=[SEGV], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x71e3c5c45330}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+2093501 rt_sigaction(SIGINT, {sa_handler=0xff7620, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x71e3c5c45330}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+2093501 rt_sigaction(SIGQUIT, {sa_handler=0xff7440, sa_mask=[QUIT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x71e3c5c45330}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+2093501 rt_sigaction(SIGILL, {sa_handler=0xff7470, sa_mask=[ILL], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x71e3c5c45330}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+2093501 rt_sigaction(SIGBUS, {sa_handler=0xff7470, sa_mask=[BUS], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x71e3c5c45330}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+2093501 rt_sigaction(SIGSYS, {sa_handler=0xff7470, sa_mask=[SYS], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x71e3c5c45330}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+2093501 rt_sigaction(SIGFPE, {sa_handler=0xff7470, sa_mask=[FPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x71e3c5c45330}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+2093501 fstat(5, {st_mode=S_IFREG|0664, st_size=1667, ...}) = 0
+2093501 read(5, "print \"=== Starting strace file "..., 4096) = 1667
+2093501 write(1, "=== Starting strace file descrip"..., 45) = 45
+2093501 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x71e3c5e94a10) = 2093509
+2093509 set_robust_list(0x71e3c5e94a20, 24 <unfinished ...>
+2093501 write(1, "[PARENT] Child spawned. I will s"..., 53 <unfinished ...>
+2093509 <... set_robust_list resumed>)  = 0
+2093501 <... write resumed>)            = 53
+2093509 times( <unfinished ...>
+2093501 openat(AT_FDCWD, "/opt/magma-2.29-4/package/System/misc.m", O_RDONLY <unfinished ...>
+2093509 <... times resumed>{tms_utime=0, tms_stime=0, tms_cutime=0, tms_cstime=0}) = 930560656
+2093501 <... openat resumed>)           = 6
+2093501 fstat(6, {st_mode=S_IFREG|0644, st_size=2383, ...}) = 0
+2093501 ioctl(6, TCGETS <unfinished ...>
+2093509 ioctl(0, TCGETS <unfinished ...>
+2093501 <... ioctl resumed>, 0x7ffe908350f0) = -1 ENOTTY (Inappropriate ioctl for device)
+2093501 stat("/opt/magma-2.29-4/package/System/misc.lck",  <unfinished ...>
+2093509 <... ioctl resumed>, {c_iflag=ICRNL|IXON|IUTF8, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B38400|CS8|CREAD, c_lflag=ISIG|ICANON|ECHO|ECHOE|ECHOK|IEXTEN|ECHOCTL|ECHOKE, ...}) = 0
+2093501 <... stat resumed>0x7ffe90835110) = -1 ENOENT (No such file or directory)
+2093501 fstat(6, {st_mode=S_IFREG|0644, st_size=2383, ...}) = 0
+2093501 read(6, "freeze;\n\nintrinsic Sleep(n::RngI"..., 4096) = 2383
+2093509 close(0)                        = 0
+2093509 close(0)                        = -1 EBADF (Bad file descriptor)
+2093501 read(6, "", 4096)               = 0
+2093501 close(6)                        = 0
+2093501 stat("/opt/magma-2.29-4/package/System/misc.m", {st_mode=S_IFREG|0644, st_size=2383, ...}) = 0
+2093501 epoll_create1(EPOLL_CLOEXEC)    = 6
+2093501 epoll_wait(6,  <unfinished ...>
+2093509 write(1, "[CHILD] I am alive! I will do 1 "..., 59) = 59
+2093509 openat(AT_FDCWD, "/opt/magma-2.29-4/package/System/misc.m", O_RDONLY) = 0
+2093509 fstat(0, {st_mode=S_IFREG|0644, st_size=2383, ...}) = 0
+2093509 ioctl(0, TCGETS, 0x7ffe90835090) = -1 ENOTTY (Inappropriate ioctl for device)
+2093509 stat("/opt/magma-2.29-4/package/System/misc.lck", 0x7ffe908350b0) = -1 ENOENT (No such file or directory)
+2093509 fstat(0, {st_mode=S_IFREG|0644, st_size=2383, ...}) = 0
+2093509 read(0, "freeze;\n\nintrinsic Sleep(n::RngI"..., 4096) = 2383
+2093509 read(0, "", 4096)               = 0
+2093509 close(0)                        = 0
+2093509 stat("/opt/magma-2.29-4/package/System/misc.m", {st_mode=S_IFREG|0644, st_size=2383, ...}) = 0
+2093509 epoll_create1(EPOLL_CLOEXEC)    = 0
+2093509 epoll_wait(0, [], 1, 1000)      = 0
+2093509 close(0)                        = 0
+2093509 write(1, "[CHILD] Finished my work. Callin"..., 40) = 40
+2093509 lseek(5, -1245, SEEK_CUR)       = 422
+2093509 exit_group(0)                   = ?
+2093509 +++ exited with 0 +++
+2093501 <... epoll_wait resumed>0x71e3c42c3448, 1, 11000) = -1 EINTR (Interrupted system call)
+2093501 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=2093509, si_uid=1004, si_status=0, si_utime=0, si_stime=0} ---
+2093501 write(1, "\n", 1)               = 1
+2093501 write(1, "[Interrupted]\n", 14) = 14
+2093501 close(5)                        = 0
+2093501 rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x71e3c5c45330}, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x71e3c5c45330}, 8) = 0
+2093501 rt_sigaction(SIGSEGV, {sa_handler=0xff7470, sa_mask=[SEGV], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x71e3c5c45330}, {sa_handler=0xff7470, sa_mask=[SEGV], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x71e3c5c45330}, 8) = 0
+2093501 rt_sigaction(SIGINT, {sa_handler=0xff7620, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x71e3c5c45330}, {sa_handler=0xff7620, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x71e3c5c45330}, 8) = 0
+2093501 rt_sigaction(SIGQUIT, {sa_handler=0xff7440, sa_mask=[QUIT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x71e3c5c45330}, {sa_handler=0xff7440, sa_mask=[QUIT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x71e3c5c45330}, 8) = 0
+2093501 rt_sigaction(SIGILL, {sa_handler=0xff7470, sa_mask=[ILL], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x71e3c5c45330}, {sa_handler=0xff7470, sa_mask=[ILL], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x71e3c5c45330}, 8) = 0
+2093501 rt_sigaction(SIGBUS, {sa_handler=0xff7470, sa_mask=[BUS], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x71e3c5c45330}, {sa_handler=0xff7470, sa_mask=[BUS], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x71e3c5c45330}, 8) = 0
+2093501 rt_sigaction(SIGSYS, {sa_handler=0xff7470, sa_mask=[SYS], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x71e3c5c45330}, {sa_handler=0xff7470, sa_mask=[SYS], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x71e3c5c45330}, 8) = 0
+2093501 rt_sigaction(SIGFPE, {sa_handler=0xff7470, sa_mask=[FPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x71e3c5c45330}, {sa_handler=0xff7470, sa_mask=[FPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x71e3c5c45330}, 8) = 0
+2093501 ioctl(0, TCGETA, {c_iflag=ICRNL|IXON|IUTF8, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B38400|CS8|CREAD, c_lflag=ISIG|ICANON|ECHO|ECHOE|ECHOK|IEXTEN|ECHOCTL|ECHOKE, ...}) = 0
+2093501 ioctl(0, TCSETA, {c_iflag=ICRNL|IXON|IUTF8, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B38400|CS8|CREAD, c_lflag=ISIG|ECHOE|ECHOK|IEXTEN|ECHOCTL|ECHOKE, ...}) = 0
+2093501 write(0, "> ", 2)               = 2
+2093501 read(0, "e", 1)                 = 1
+2093501 write(0, "e", 1)                = 1
+2093501 read(0, "x", 1)                 = 1
+2093501 write(0, "x", 1)                = 1
+2093501 read(0, "i", 1)                 = 1
+2093501 write(0, "i", 1)                = 1
+2093501 read(0, "t", 1)                 = 1
+2093501 write(0, "t", 1)                = 1
+2093501 read(0, ";", 1)                 = 1
+2093501 write(0, ";", 1)                = 1
+2093501 read(0, "\n", 1)                = 1
+2093501 write(0, "\10\10\10\10\10\10\10> exit;\n", 15) = 15
+2093501 rt_sigaction(SIGALRM, {sa_handler=0x19d3760, sa_mask=[ALRM], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x71e3c5c45330}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+2093501 alarm(1)                        = 0
+2093501 write(1, "\n", 1)               = 1
+2093501 times({tms_utime=0, tms_stime=1 /* 0.01 s */, tms_cutime=0, tms_cstime=0}) = 930560989
+2093501 write(1, "Total time: 0.010 seconds, Total"..., 55) = 55
+2093501 ioctl(0, TCGETS, {c_iflag=ICRNL|IXON|IUTF8, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B38400|CS8|CREAD, c_lflag=ISIG|ECHOE|ECHOK|IEXTEN|ECHOCTL|ECHOKE, ...}) = 0
+2093501 ioctl(0, TCSETA, {c_iflag=ICRNL|IXON|IUTF8, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B38400|CS8|CREAD, c_lflag=ISIG|ICANON|ECHO|ECHOE|ECHOK|IEXTEN|ECHOCTL|ECHOKE, ...}) = 0
+2093501 exit_group(0)                   = ?
+2093501 +++ exited with 0 +++
