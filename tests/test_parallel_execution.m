@@ -12,7 +12,7 @@ end function;
  *  but ParallelMapIsEven performs the work in parallel.
  */
 function ParallelMapIsEven(task_inputs)
-    CORE_COUNT := 32;
+    CORE_COUNT := 16;
     MEMORY_PER_WORKER := 16 * 10^9; // 0 for unlimited
 
     num_tasks := #task_inputs;
@@ -169,7 +169,7 @@ function ParallelMapIsEven(task_inputs)
     return [ results_by_task_idx[i] : i in [1..num_tasks] ];
 end function;
 
-task_inputs := [1..100000];
+task_inputs := [1..1000000];
 
 printf "Testing ParallelMapIsEven on %o inputs...\n", #task_inputs;
 
