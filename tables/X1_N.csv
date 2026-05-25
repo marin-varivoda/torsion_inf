@@ -56,10 +56,10 @@ X1(54),54,52,0,972,9.64,10,18,False,False,False,False,False,False,abramovich
 X1(55),55,81,0,1440,14.28,15,30,False,False,False,False,False,False,abramovich
 X1(56),56,61,0,1152,11.43,12,24,False,False,False,False,False,False,abramovich
 X1(57),57,85,1,1440,14.28,19,30,False,False,False,False,False,False,cover search
-X1(58),58,78,1,1260,12.5,13,31,False,False,False,False,False,False,abramovich, we know that X1(58) has finitely many points of degree <= 10 because of X1(58)->X1(29)
+X1(58),58,78,1,1260,12.5,13,31,False,False,False,False,False,False,abramovich - we know that X1(58) has finitely many points of degree <= 10 because of X1(58)->X1(29)
 X1(59),59,117,0,1740,17.26,18,46,False,False,False,False,False,False,abramovich
 X1(60),60,57,0,1152,11.43,12,24,False,False,False,False,False,False,abramovich
 X1(61),61,126,3,1860,18.45,19,49,False,False,False,False,False,False,abramovich
 X1(62),62,91,0,1440,14.28,15,36,False,False,False,False,False,False,abramovich
-X1(63),63,97,2,1728,17.14,18,36,False,False,False,False,False,False,abramovich, X1(63)->63.576.25.g.4 is a map to a curve where the latter has finitely many points of degree <= 11
+X1(63),63,97,2,1728,17.14,18,36,False,False,False,False,False,False,abramovich - X1(63)->63.576.25.g.4 is a map to a curve where the latter has finitely many points of degree <= 11
 X1(64),64,93,0,1536,15.23,16,32,False,False,False,False,False,False,abramovich
