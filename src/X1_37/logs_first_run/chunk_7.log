@@ -1,0 +1,106 @@
+Starting chunk 7 at Mon Jun  8 11:17:29 CEST 2026
+
+======================================================================
+1. Build X_1(37) over F_2
+======================================================================
+Basic genus and constant-field checks skipped.
+
+======================================================================
+2. Load X_0(37)^+ map data
+======================================================================
+Loading "X1_37_X0plus_map_data.m"
+#S37 coefficients = 18; #T37 coefficients = 18
+Map reconstruction verification skipped.
+
+======================================================================
+3. Recover quotient fibers from [S37:T37:1]
+======================================================================
+F2 cached scan: using the three target points needed for the verified <1,4> 
+pair.
+#degree-36 candidate fibers retained = 6
+
+======================================================================
+4. Verify an order-5 quotient delta
+======================================================================
+fiber 4 minus fiber 1: order check skipped because the runner already verified 
+it
+Using candidate fiber pair <1,4> as a verified order-5 generator over F_2.
+
+======================================================================
+5. Proposition 4.9-style translate test for W^0_9
+======================================================================
+Basic model checks skipped by VERIFY_MODEL_BASIC:=false.
+quotient map degree = 36
+Testing 4 nonzero quotient element(s).
+Type-chunking: CHUNK_INDEX=7, NCHUNKS=16
+Place counts by degree 1..9: [ 18, 0, 0, 0, 0, 21, 18, 0, 39 ]
+Unique degree types: 36; assigned type indices: [ 8, 24 ]
+Place/type precomputation time: 1.380 seconds.
+Degree type 8/36: [ <1, 6>, <1, 1>, <1, 1>, <1, 1> ]; groups [ <1, 6, 1>, <1, 1,
+3> ]; divisors 17136; elapsed 0.000
+Fast W0 setup: cover degree 144; dims [ 141, 177, 213, 249 ]; row maxima [ 180, 
+216, 252, 288 ]; RR times [ 43.090, 88.410, 51.460, 132.570 ]
+Chunk 7 checked 1000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 369.100
+Chunk 7 checked 2000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 372.050
+Chunk 7 checked 3000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 372.550
+Chunk 7 checked 4000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 372.920
+Chunk 7 checked 5000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 373.280
+Chunk 7 checked 6000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 373.640
+Chunk 7 checked 7000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 374.160
+Chunk 7 checked 8000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 374.630
+Chunk 7 checked 9000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 375.000
+Chunk 7 checked 10000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 375.610
+Chunk 7 checked 11000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 375.970
+Chunk 7 checked 12000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 376.340
+Chunk 7 checked 13000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 376.700
+Chunk 7 checked 14000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 377.360
+Chunk 7 checked 15000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 377.940
+Chunk 7 checked 16000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 378.300
+Chunk 7 checked 17000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 378.670
+Degree type 24/36: [ <4, 1>, <4, 1>, <1, 1> ]; groups [ <4, 1, 2>, <1, 1, 1> ]; 
+divisors 2448; elapsed 378.710
+Fast W0 setup: cover degree 72; dims [ 69, 105, 141, 177 ]; row maxima [ 108, 
+144, 180, 216 ]; RR times [ 94.600, 64.910, 167.020, 37.760 ]
+Chunk 7 checked 18000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 898.330
+Chunk 7 checked 19000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 1269.750
+Divisors tested in chunk 7: 19584
+Surviving translates in this chunk: 0
+SUCCESS: this chunk contains no translate survivor.
+CHUNK_RESULT: SUCCESS
+
+======================================================================
+Summary
+======================================================================
+RUN_TRANSLATE_TEST        = true
+VERIFY_MAP_BY_RECONSTRUCTION = false
+VERIFY_DELTA_ORDER        = false
+VERIFY_MODEL_BASIC        = false
+NCHUNKS                   = 16
+CHUNK_INDEX               = 7
+CACHED_GENERATOR_PAIR     = <1,4>
+#quotient_fibers          = 6
+quotient degrees          = [ 36, 36, 36, 36, 36, 36 ]
+cyclic_delta_ok           = true
+translate_test_ok         = true
+#survivors                = 0
+Finished X1_37_prop49_F2_short_complete.m.
+Finished chunk 7 at Mon Jun  8 11:42:10 CEST 2026 with status 0

@@ -1,0 +1,364 @@
+Starting chunk 4 at Mon Jun  8 11:17:29 CEST 2026
+
+======================================================================
+1. Build X_1(37) over F_2
+======================================================================
+Basic genus and constant-field checks skipped.
+
+======================================================================
+2. Load X_0(37)^+ map data
+======================================================================
+Loading "X1_37_X0plus_map_data.m"
+#S37 coefficients = 18; #T37 coefficients = 18
+Map reconstruction verification skipped.
+
+======================================================================
+3. Recover quotient fibers from [S37:T37:1]
+======================================================================
+F2 cached scan: using the three target points needed for the verified <1,4> 
+pair.
+#degree-36 candidate fibers retained = 6
+
+======================================================================
+4. Verify an order-5 quotient delta
+======================================================================
+fiber 4 minus fiber 1: order check skipped because the runner already verified 
+it
+Using candidate fiber pair <1,4> as a verified order-5 generator over F_2.
+
+======================================================================
+5. Proposition 4.9-style translate test for W^0_9
+======================================================================
+Basic model checks skipped by VERIFY_MODEL_BASIC:=false.
+quotient map degree = 36
+Testing 4 nonzero quotient element(s).
+Type-chunking: CHUNK_INDEX=4, NCHUNKS=16
+Place counts by degree 1..9: [ 18, 0, 0, 0, 0, 21, 18, 0, 39 ]
+Unique degree types: 36; assigned type indices: [ 5, 21 ]
+Place/type precomputation time: 0.950 seconds.
+Degree type 5/36: [ <4, 1>, <1, 1>, <1, 1>, <1, 1>, <1, 1>, <1, 1> ]; groups [ 
+<4, 1, 1>, <1, 1, 5> ]; divisors 111384; elapsed 0.000
+Fast W0 setup: cover degree 72; dims [ 69, 105, 141, 177 ]; row maxima [ 108, 
+144, 180, 216 ]; RR times [ 65.150, 43.970, 115.420, 25.490 ]
+Chunk 4 checked 1000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 712.400
+Chunk 4 checked 2000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 795.080
+Chunk 4 checked 3000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 795.160
+Chunk 4 checked 4000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 795.230
+Chunk 4 checked 5000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 795.310
+Chunk 4 checked 6000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 795.390
+Chunk 4 checked 7000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 795.460
+Chunk 4 checked 8000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 795.540
+Chunk 4 checked 9000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 884.100
+Chunk 4 checked 10000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 884.170
+Chunk 4 checked 11000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 884.250
+Chunk 4 checked 12000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 884.330
+Chunk 4 checked 13000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 884.400
+Chunk 4 checked 14000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 884.480
+Chunk 4 checked 15000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 884.560
+Chunk 4 checked 16000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 884.630
+Chunk 4 checked 17000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 884.710
+Chunk 4 checked 18000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 884.780
+Chunk 4 checked 19000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 884.860
+Chunk 4 checked 20000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 884.940
+Chunk 4 checked 21000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 885.010
+Chunk 4 checked 22000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 885.090
+Chunk 4 checked 23000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 885.160
+Chunk 4 checked 24000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 885.240
+Chunk 4 checked 25000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 885.320
+Chunk 4 checked 26000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 885.390
+Chunk 4 checked 27000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 885.470
+Chunk 4 checked 28000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 885.540
+Chunk 4 checked 29000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 885.620
+Chunk 4 checked 30000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 885.690
+Chunk 4 checked 31000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 885.770
+Chunk 4 checked 32000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 885.850
+Chunk 4 checked 33000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 885.920
+Chunk 4 checked 34000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 886.000
+Chunk 4 checked 35000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 886.070
+Chunk 4 checked 36000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 886.150
+Chunk 4 checked 37000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 886.230
+Chunk 4 checked 38000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 886.300
+Chunk 4 checked 39000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 886.380
+Chunk 4 checked 40000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 886.460
+Chunk 4 checked 41000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 886.540
+Chunk 4 checked 42000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 886.620
+Chunk 4 checked 43000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 886.700
+Chunk 4 checked 44000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 886.780
+Chunk 4 checked 45000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 886.850
+Chunk 4 checked 46000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 886.930
+Chunk 4 checked 47000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 887.010
+Chunk 4 checked 48000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 887.080
+Chunk 4 checked 49000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 887.160
+Chunk 4 checked 50000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 887.240
+Chunk 4 checked 51000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 887.310
+Chunk 4 checked 52000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 887.390
+Chunk 4 checked 53000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 887.470
+Chunk 4 checked 54000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 887.540
+Chunk 4 checked 55000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 887.620
+Chunk 4 checked 56000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 887.700
+Chunk 4 checked 57000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 887.770
+Chunk 4 checked 58000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 887.850
+Chunk 4 checked 59000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 887.920
+Chunk 4 checked 60000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 888.000
+Chunk 4 checked 61000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 888.070
+Chunk 4 checked 62000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 888.150
+Chunk 4 checked 63000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 888.230
+Chunk 4 checked 64000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 888.310
+Chunk 4 checked 65000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 888.390
+Chunk 4 checked 66000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 888.470
+Chunk 4 checked 67000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 888.540
+Chunk 4 checked 68000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 888.620
+Chunk 4 checked 69000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 888.700
+Chunk 4 checked 70000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 888.770
+Chunk 4 checked 71000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 888.850
+Chunk 4 checked 72000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 888.920
+Chunk 4 checked 73000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 889.000
+Chunk 4 checked 74000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 889.080
+Chunk 4 checked 75000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 889.160
+Chunk 4 checked 76000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 889.230
+Chunk 4 checked 77000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 889.300
+Chunk 4 checked 78000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 889.380
+Chunk 4 checked 79000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 889.450
+Chunk 4 checked 80000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 889.530
+Chunk 4 checked 81000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 889.610
+Chunk 4 checked 82000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 889.680
+Chunk 4 checked 83000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 889.750
+Chunk 4 checked 84000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 889.830
+Chunk 4 checked 85000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 889.900
+Chunk 4 checked 86000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 889.980
+Chunk 4 checked 87000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 890.060
+Chunk 4 checked 88000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 890.140
+Chunk 4 checked 89000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 890.220
+Chunk 4 checked 90000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 890.300
+Chunk 4 checked 91000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 890.380
+Chunk 4 checked 92000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 890.460
+Chunk 4 checked 93000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 890.530
+Chunk 4 checked 94000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 890.600
+Chunk 4 checked 95000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 890.680
+Chunk 4 checked 96000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 890.750
+Chunk 4 checked 97000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 890.830
+Chunk 4 checked 98000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 890.900
+Chunk 4 checked 99000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 890.980
+Chunk 4 checked 100000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 891.060
+Chunk 4 checked 101000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 891.130
+Chunk 4 checked 102000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 891.210
+Chunk 4 checked 103000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 891.290
+Chunk 4 checked 104000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 891.360
+Chunk 4 checked 105000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 891.440
+Chunk 4 checked 106000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 891.510
+Chunk 4 checked 107000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 891.590
+Chunk 4 checked 108000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 891.660
+Chunk 4 checked 109000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 891.730
+Chunk 4 checked 110000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 891.810
+Chunk 4 checked 111000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 891.880
+Degree type 21/36: [ <3, 1>, <3, 1>, <2, 1>, <1, 1> ]; groups [ <3, 1, 2>, <2, 
+1, 1>, <1, 1, 1> ]; divisors 36720; elapsed 891.920
+Fast W0 setup: cover degree 54; dims [ 51, 87, 123, 159 ]; row maxima [ 90, 126,
+162, 198 ]; RR times [ 14.460, 58.700, 45.090, 119.390 ]
+Chunk 4 checked 112000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 1182.530
+Chunk 4 checked 113000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 1298.690
+Chunk 4 checked 114000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 1298.800
+Chunk 4 checked 115000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 1298.910
+Chunk 4 checked 116000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 1299.010
+Chunk 4 checked 117000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 1299.130
+Chunk 4 checked 118000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 1299.240
+Chunk 4 checked 119000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 1299.350
+Chunk 4 checked 120000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 1299.460
+Chunk 4 checked 121000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 1299.570
+Chunk 4 checked 122000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 1299.680
+Chunk 4 checked 123000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 1299.780
+Chunk 4 checked 124000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 1337.210
+Chunk 4 checked 125000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 1337.310
+Chunk 4 checked 126000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 1337.410
+Chunk 4 checked 127000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 1337.520
+Chunk 4 checked 128000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 1337.630
+Chunk 4 checked 129000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 1337.730
+Chunk 4 checked 130000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 1337.830
+Chunk 4 checked 131000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 1337.940
+Chunk 4 checked 132000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 1338.040
+Chunk 4 checked 133000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 1338.140
+Chunk 4 checked 134000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 1338.250
+Chunk 4 checked 135000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 1338.350
+Chunk 4 checked 136000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 1338.450
+Chunk 4 checked 137000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 1338.550
+Chunk 4 checked 138000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 1338.650
+Chunk 4 checked 139000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 1338.750
+Chunk 4 checked 140000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 1338.850
+Chunk 4 checked 141000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 1338.950
+Chunk 4 checked 142000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 1339.040
+Chunk 4 checked 143000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 1339.160
+Chunk 4 checked 144000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 1339.250
+Chunk 4 checked 145000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 1339.330
+Chunk 4 checked 146000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 1339.420
+Chunk 4 checked 147000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 1339.510
+Chunk 4 checked 148000 divisors; last killed by 1*(fiber 4 minus fiber 1); 
+survivors 0; elapsed 1339.600
+Divisors tested in chunk 4: 148104
+Surviving translates in this chunk: 0
+SUCCESS: this chunk contains no translate survivor.
+CHUNK_RESULT: SUCCESS
+
+======================================================================
+Summary
+======================================================================
+RUN_TRANSLATE_TEST        = true
+VERIFY_MAP_BY_RECONSTRUCTION = false
+VERIFY_DELTA_ORDER        = false
+VERIFY_MODEL_BASIC        = false
+NCHUNKS                   = 16
+CHUNK_INDEX               = 4
+CACHED_GENERATOR_PAIR     = <1,4>
+#quotient_fibers          = 6
+quotient degrees          = [ 36, 36, 36, 36, 36, 36 ]
+cyclic_delta_ok           = true
+translate_test_ok         = true
+#survivors                = 0
+Finished X1_37_prop49_F2_short_complete.m.
+Finished chunk 4 at Mon Jun  8 11:42:19 CEST 2026 with status 0
