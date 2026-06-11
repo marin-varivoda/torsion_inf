@@ -15,7 +15,7 @@ To ensure this repository is as self-contained as possbile, we include copies of
 ### Optimized equations for $X_1(M, N)$
 The curve models in the `third_party/DS17_X1MN_models` directory were obtained from the [Optimized equations for X_1(m,mn)](https://math.mit.edu/~drew/X1mn.html) database. 
 
-We thank the authors Maarten Derickx and Andrew V. Sutherland for constructing these models. The method for obtaining them is detailed in their paper:
+The method for obtaining them is detailed in their paper:
 
 > **Maarten Derickx and Andrew V. Sutherland**, *Torsion subgroups of elliptic curves over quintic and sextic number fields*, Proceedings of the AMS, **145** (2017), 4233-4245.
 
