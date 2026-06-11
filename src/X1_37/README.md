@@ -1,9 +1,6 @@
 X1(37), F_2 degree-9 translate test: compact first-run package
 ================================================================
 
-This directory is a shorter, first-run version of
-../X1_37_F2_completed_20260605_173622/code.
-
 Files
 -----
 
@@ -19,6 +16,8 @@ run_first.sh
     First-run driver that was used to verify our results.  It verifies the hard-coded map and the cached generator
     pair <1,4> once, then launches all chunks.  Workers skip only checks already
     proved in the verification log.
+
+logs_first_runs contains the log of a run that verified the result, and was run on 16 cores.
 
 Usage
 -----
