@@ -1,0 +1,107 @@
+Starting chunk 18 at Fri Jun 12 18:06:05 CEST 2026
+Loading "X1_37_ST_minimal.m"
+Loading "ff_search.m"
+Build X_1(37) over F_2.
+Loading "X1_37_X0plus_map_data.m"
+#S37 coefficients = 18; #T37 coefficients = 18
+Use the quotient image q(S,T)=0.
+ST_RELATION_VERIFICATION: SUCCESS
+#Places(q(S,T)=0,1) = 5
+fiber degrees = [ 36, 36 ]
+Testing 4 nonzero translates; chunk 18/24.
+Place counts by degree: [ 18, 0, 0, 0, 0, 21, 18, 0, 39 ]
+Degree types: 36; assigned [ 19 ]
+Degree type 19/36: [ <2, 1>, <2, 1>, <2, 1>, <2, 1>, <1, 1> ]; groups [ <2, 1, 
+4>, <1, 1, 1> ]; elapsed 0.000
+Fast W0 setup: cover degree 36; dims [ 33, 69, 105, 141 ]; RR times [ 57.170, 
+22.160, 94.000, 66.140 ]
+Chunk 18 checked 1000 divisors; last killed by 1*D0; survivors 0; elapsed 
+254.990
+Chunk 18 checked 2000 divisors; last killed by 1*D0; survivors 0; elapsed 
+258.190
+Chunk 18 checked 3000 divisors; last killed by 1*D0; survivors 0; elapsed 
+258.290
+Chunk 18 checked 4000 divisors; last killed by 1*D0; survivors 0; elapsed 
+258.390
+Chunk 18 checked 5000 divisors; last killed by 1*D0; survivors 0; elapsed 
+258.490
+Chunk 18 checked 6000 divisors; last killed by 1*D0; survivors 0; elapsed 
+258.590
+Chunk 18 checked 7000 divisors; last killed by 1*D0; survivors 0; elapsed 
+258.690
+Chunk 18 checked 8000 divisors; last killed by 1*D0; survivors 0; elapsed 
+258.790
+Chunk 18 checked 9000 divisors; last killed by 1*D0; survivors 0; elapsed 
+258.890
+Chunk 18 checked 10000 divisors; last killed by 1*D0; survivors 0; elapsed 
+261.010
+Chunk 18 checked 11000 divisors; last killed by 1*D0; survivors 0; elapsed 
+261.110
+Chunk 18 checked 12000 divisors; last killed by 1*D0; survivors 0; elapsed 
+261.210
+Chunk 18 checked 13000 divisors; last killed by 1*D0; survivors 0; elapsed 
+261.310
+Chunk 18 checked 14000 divisors; last killed by 1*D0; survivors 0; elapsed 
+261.400
+Chunk 18 checked 15000 divisors; last killed by 1*D0; survivors 0; elapsed 
+261.500
+Chunk 18 checked 16000 divisors; last killed by 1*D0; survivors 0; elapsed 
+261.600
+Chunk 18 checked 17000 divisors; last killed by 1*D0; survivors 0; elapsed 
+261.710
+Chunk 18 checked 18000 divisors; last killed by 1*D0; survivors 0; elapsed 
+261.800
+Chunk 18 checked 19000 divisors; last killed by 1*D0; survivors 0; elapsed 
+261.900
+Chunk 18 checked 20000 divisors; last killed by 1*D0; survivors 0; elapsed 
+262.000
+Chunk 18 checked 21000 divisors; last killed by 1*D0; survivors 0; elapsed 
+262.100
+Chunk 18 checked 22000 divisors; last killed by 1*D0; survivors 0; elapsed 
+262.200
+Chunk 18 checked 23000 divisors; last killed by 1*D0; survivors 0; elapsed 
+262.300
+Chunk 18 checked 24000 divisors; last killed by 1*D0; survivors 0; elapsed 
+262.400
+Chunk 18 checked 25000 divisors; last killed by 1*D0; survivors 0; elapsed 
+262.500
+Chunk 18 checked 26000 divisors; last killed by 1*D0; survivors 0; elapsed 
+262.600
+Chunk 18 checked 27000 divisors; last killed by 1*D0; survivors 0; elapsed 
+262.700
+Chunk 18 checked 28000 divisors; last killed by 1*D0; survivors 0; elapsed 
+262.800
+Chunk 18 checked 29000 divisors; last killed by 1*D0; survivors 0; elapsed 
+262.900
+Chunk 18 checked 30000 divisors; last killed by 1*D0; survivors 0; elapsed 
+263.000
+Chunk 18 checked 31000 divisors; last killed by 1*D0; survivors 0; elapsed 
+263.100
+Chunk 18 checked 32000 divisors; last killed by 1*D0; survivors 0; elapsed 
+263.200
+Chunk 18 checked 33000 divisors; last killed by 1*D0; survivors 0; elapsed 
+263.300
+Chunk 18 checked 34000 divisors; last killed by 1*D0; survivors 0; elapsed 
+263.400
+Chunk 18 checked 35000 divisors; last killed by 1*D0; survivors 0; elapsed 
+263.500
+Chunk 18 checked 36000 divisors; last killed by 1*D0; survivors 0; elapsed 
+263.600
+Chunk 18 checked 37000 divisors; last killed by 1*D0; survivors 0; elapsed 
+263.700
+Chunk 18 checked 38000 divisors; last killed by 1*D0; survivors 0; elapsed 
+263.800
+Chunk 18 checked 39000 divisors; last killed by 1*D0; survivors 0; elapsed 
+263.910
+Chunk 18 checked 40000 divisors; last killed by 1*D0; survivors 0; elapsed 
+264.010
+Chunk 18 checked 41000 divisors; last killed by 1*D0; survivors 0; elapsed 
+264.110
+Chunk 18 checked 42000 divisors; last killed by 1*D0; survivors 0; elapsed 
+266.220
+Divisors tested in chunk 18: 42840
+Surviving translates in this chunk: 0
+SUCCESS: this chunk contains no translate survivor.
+CHUNK_RESULT: SUCCESS
+Finished X1_37_ST_minimal.m.
+Finished chunk 18 at Fri Jun 12 18:13:34 CEST 2026 with status 0

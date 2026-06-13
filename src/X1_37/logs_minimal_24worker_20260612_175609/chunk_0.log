@@ -1,0 +1,114 @@
+Starting chunk 0 at Fri Jun 12 18:06:05 CEST 2026
+Loading "X1_37_ST_minimal.m"
+Loading "ff_search.m"
+Build X_1(37) over F_2.
+Loading "X1_37_X0plus_map_data.m"
+#S37 coefficients = 18; #T37 coefficients = 18
+Use the quotient image q(S,T)=0.
+ST_RELATION_VERIFICATION: SUCCESS
+#Places(q(S,T)=0,1) = 5
+fiber degrees = [ 36, 36 ]
+Testing 4 nonzero translates; chunk 0/24.
+Place counts by degree: [ 18, 0, 0, 0, 0, 21, 18, 0, 39 ]
+Degree types: 36; assigned [ 1, 25 ]
+Degree type 1/36: [ <1, 1>, <1, 1>, <1, 1>, <1, 1>, <1, 1>, <1, 1>, <1, 1>, <1, 
+1>, <1, 1> ]; groups [ <1, 1, 9> ]; elapsed 0.000
+Fast W0 setup: cover degree 18; dims [ 15, 51, 87, 123 ]; RR times [ 14.910, 
+51.090, 21.960, 80.600 ]
+Chunk 0 checked 1000 divisors; last killed by 1*D0; survivors 0; elapsed 171.520
+Chunk 0 checked 2000 divisors; last killed by 1*D0; survivors 0; elapsed 171.560
+Chunk 0 checked 3000 divisors; last killed by 1*D0; survivors 0; elapsed 172.010
+Chunk 0 checked 4000 divisors; last killed by 1*D0; survivors 0; elapsed 172.060
+Chunk 0 checked 5000 divisors; last killed by 1*D0; survivors 0; elapsed 172.100
+Chunk 0 checked 6000 divisors; last killed by 1*D0; survivors 0; elapsed 172.790
+Chunk 0 checked 7000 divisors; last killed by 1*D0; survivors 0; elapsed 172.840
+Chunk 0 checked 8000 divisors; last killed by 1*D0; survivors 0; elapsed 172.880
+Chunk 0 checked 9000 divisors; last killed by 1*D0; survivors 0; elapsed 172.930
+Chunk 0 checked 10000 divisors; last killed by 1*D0; survivors 0; elapsed 
+172.970
+Chunk 0 checked 11000 divisors; last killed by 1*D0; survivors 0; elapsed 
+173.010
+Chunk 0 checked 12000 divisors; last killed by 1*D0; survivors 0; elapsed 
+173.500
+Chunk 0 checked 13000 divisors; last killed by 1*D0; survivors 0; elapsed 
+173.540
+Chunk 0 checked 14000 divisors; last killed by 1*D0; survivors 0; elapsed 
+173.590
+Chunk 0 checked 15000 divisors; last killed by 1*D0; survivors 0; elapsed 
+173.630
+Chunk 0 checked 16000 divisors; last killed by 1*D0; survivors 0; elapsed 
+173.670
+Chunk 0 checked 17000 divisors; last killed by 1*D0; survivors 0; elapsed 
+173.720
+Chunk 0 checked 18000 divisors; last killed by 1*D0; survivors 0; elapsed 
+173.760
+Chunk 0 checked 19000 divisors; last killed by 1*D0; survivors 0; elapsed 
+173.810
+Chunk 0 checked 20000 divisors; last killed by 1*D0; survivors 0; elapsed 
+173.850
+Chunk 0 checked 21000 divisors; last killed by 1*D0; survivors 0; elapsed 
+173.900
+Chunk 0 checked 22000 divisors; last killed by 1*D0; survivors 0; elapsed 
+173.940
+Chunk 0 checked 23000 divisors; last killed by 1*D0; survivors 0; elapsed 
+173.980
+Chunk 0 checked 24000 divisors; last killed by 1*D0; survivors 0; elapsed 
+174.030
+Chunk 0 checked 25000 divisors; last killed by 1*D0; survivors 0; elapsed 
+174.490
+Chunk 0 checked 26000 divisors; last killed by 1*D0; survivors 0; elapsed 
+174.540
+Chunk 0 checked 27000 divisors; last killed by 1*D0; survivors 0; elapsed 
+174.580
+Chunk 0 checked 28000 divisors; last killed by 1*D0; survivors 0; elapsed 
+174.620
+Chunk 0 checked 29000 divisors; last killed by 1*D0; survivors 0; elapsed 
+174.670
+Chunk 0 checked 30000 divisors; last killed by 1*D0; survivors 0; elapsed 
+174.710
+Chunk 0 checked 31000 divisors; last killed by 1*D0; survivors 0; elapsed 
+174.760
+Chunk 0 checked 32000 divisors; last killed by 1*D0; survivors 0; elapsed 
+174.800
+Chunk 0 checked 33000 divisors; last killed by 1*D0; survivors 0; elapsed 
+174.850
+Chunk 0 checked 34000 divisors; last killed by 1*D0; survivors 0; elapsed 
+174.890
+Chunk 0 checked 35000 divisors; last killed by 1*D0; survivors 0; elapsed 
+174.930
+Chunk 0 checked 36000 divisors; last killed by 1*D0; survivors 0; elapsed 
+174.980
+Chunk 0 checked 37000 divisors; last killed by 1*D0; survivors 0; elapsed 
+175.020
+Chunk 0 checked 38000 divisors; last killed by 1*D0; survivors 0; elapsed 
+175.070
+Chunk 0 checked 39000 divisors; last killed by 1*D0; survivors 0; elapsed 
+175.110
+Chunk 0 checked 40000 divisors; last killed by 1*D0; survivors 0; elapsed 
+175.160
+Chunk 0 checked 41000 divisors; last killed by 1*D0; survivors 0; elapsed 
+175.200
+Chunk 0 checked 42000 divisors; last killed by 1*D0; survivors 0; elapsed 
+175.250
+Chunk 0 checked 43000 divisors; last killed by 1*D0; survivors 0; elapsed 
+175.290
+Chunk 0 checked 44000 divisors; last killed by 1*D0; survivors 0; elapsed 
+175.340
+Chunk 0 checked 45000 divisors; last killed by 1*D0; survivors 0; elapsed 
+175.380
+Chunk 0 checked 46000 divisors; last killed by 1*D0; survivors 0; elapsed 
+175.430
+Chunk 0 checked 47000 divisors; last killed by 1*D0; survivors 0; elapsed 
+175.470
+Chunk 0 checked 48000 divisors; last killed by 1*D0; survivors 0; elapsed 
+175.520
+Degree type 25/36: [ <8, 1>, <1, 1> ]; groups [ <8, 1, 1>, <1, 1, 1> ]; elapsed 
+176.030
+Fast W0 setup: cover degree 144; dims [ 141, 177, 213, 249 ]; RR times [ 
+135.760, 106.890, 242.140, 90.500 ]
+Divisors tested in chunk 0: 48926
+Surviving translates in this chunk: 0
+SUCCESS: this chunk contains no translate survivor.
+CHUNK_RESULT: SUCCESS
+Finished X1_37_ST_minimal.m.
+Finished chunk 0 at Fri Jun 12 19:16:14 CEST 2026 with status 0

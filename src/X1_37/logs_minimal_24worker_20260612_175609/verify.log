@@ -1,0 +1,19 @@
+Magma V2.29-4     Fri Jun 12 2026 17:56:32 on mordell  [Seed = 1916017096]
+Type ? for help.  Type <Ctrl>-D to quit.
+
+Loading file "verify.m"
+Loading "X1_37_ST_minimal.m"
+Loading "ff_search.m"
+Build X_1(37) over F_2.
+Loading "X1_37_X0plus_map_data.m"
+#S37 coefficients = 18; #T37 coefficients = 18
+Verify S37,T37 from the universal elliptic curve.
+MAP_VERIFICATION: SUCCESS
+Use the quotient image q(S,T)=0.
+ST_RELATION_VERIFICATION: SUCCESS
+#Places(q(S,T)=0,1) = 5
+fiber degrees = [ 36, 36 ]
+DELTA_ORDER: SUCCESS
+Finished X1_37_ST_minimal.m.
+
+Total time: 572.860 seconds, Total memory usage: 529.16MB

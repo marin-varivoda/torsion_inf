@@ -1,0 +1,50 @@
+Starting chunk 11 at Fri Jun 12 18:06:05 CEST 2026
+Loading "X1_37_ST_minimal.m"
+Loading "ff_search.m"
+Build X_1(37) over F_2.
+Loading "X1_37_X0plus_map_data.m"
+#S37 coefficients = 18; #T37 coefficients = 18
+Use the quotient image q(S,T)=0.
+ST_RELATION_VERIFICATION: SUCCESS
+#Places(q(S,T)=0,1) = 5
+fiber degrees = [ 36, 36 ]
+Testing 4 nonzero translates; chunk 11/24.
+Place counts by degree: [ 18, 0, 0, 0, 0, 21, 18, 0, 39 ]
+Degree types: 36; assigned [ 12, 36 ]
+Degree type 12/36: [ <6, 1>, <1, 1>, <1, 1>, <1, 1> ]; groups [ <6, 1, 1>, <1, 
+1, 3> ]; elapsed 0.000
+Fast W0 setup: cover degree 108; dims [ 105, 141, 177, 213 ]; RR times [ 
+102.710, 25.610, 167.210, 127.210 ]
+Chunk 11 checked 1000 divisors; last killed by 1*D0; survivors 0; elapsed 
+2135.400
+Chunk 11 checked 2000 divisors; last killed by 1*D0; survivors 0; elapsed 
+2402.640
+Chunk 11 checked 3000 divisors; last killed by 1*D0; survivors 0; elapsed 
+2402.780
+Chunk 11 checked 4000 divisors; last killed by 1*D0; survivors 0; elapsed 
+2402.920
+Chunk 11 checked 5000 divisors; last killed by 1*D0; survivors 0; elapsed 
+2403.060
+Chunk 11 checked 6000 divisors; last killed by 1*D0; survivors 0; elapsed 
+2403.200
+Chunk 11 checked 7000 divisors; last killed by 1*D0; survivors 0; elapsed 
+2403.340
+Chunk 11 checked 8000 divisors; last killed by 1*D0; survivors 0; elapsed 
+2403.480
+Chunk 11 checked 9000 divisors; last killed by 1*D0; survivors 0; elapsed 
+2403.620
+Chunk 11 checked 10000 divisors; last killed by 1*D0; survivors 0; elapsed 
+2403.760
+Chunk 11 checked 11000 divisors; last killed by 1*D0; survivors 0; elapsed 
+2403.900
+Chunk 11 checked 12000 divisors; last killed by 1*D0; survivors 0; elapsed 
+2404.040
+Degree type 36/36: [ <9, 1> ]; groups [ <9, 1, 1> ]; elapsed 2404.080
+Fast W0 setup: cover degree 162; dims [ 159, 195, 231, 267 ]; RR times [ 74.650,
+171.460, 89.630, 98.470 ]
+Divisors tested in chunk 11: 12258
+Surviving translates in this chunk: 0
+SUCCESS: this chunk contains no translate survivor.
+CHUNK_RESULT: SUCCESS
+Finished X1_37_ST_minimal.m.
+Finished chunk 11 at Fri Jun 12 19:54:49 CEST 2026 with status 0

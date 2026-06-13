@@ -1,0 +1,35 @@
+Starting chunk 17 at Fri Jun 12 18:06:05 CEST 2026
+Loading "X1_37_ST_minimal.m"
+Loading "ff_search.m"
+Build X_1(37) over F_2.
+Loading "X1_37_X0plus_map_data.m"
+#S37 coefficients = 18; #T37 coefficients = 18
+Use the quotient image q(S,T)=0.
+ST_RELATION_VERIFICATION: SUCCESS
+#Places(q(S,T)=0,1) = 5
+fiber degrees = [ 36, 36 ]
+Testing 4 nonzero translates; chunk 17/24.
+Place counts by degree: [ 18, 0, 0, 0, 0, 21, 18, 0, 39 ]
+Degree types: 36; assigned [ 18 ]
+Degree type 18/36: [ <1, 6>, <2, 1>, <1, 1> ]; groups [ <1, 6, 1>, <2, 1, 1>, 
+<1, 1, 1> ]; elapsed 0.000
+Fast W0 setup: cover degree 162; dims [ 159, 195, 231, 267 ]; RR times [ 84.500,
+44.580, 132.290, 85.120 ]
+Chunk 17 checked 1000 divisors; last killed by 1*D0; survivors 0; elapsed 
+511.300
+Chunk 17 checked 2000 divisors; last killed by 1*D0; survivors 0; elapsed 
+512.000
+Chunk 17 checked 3000 divisors; last killed by 1*D0; survivors 0; elapsed 
+512.610
+Chunk 17 checked 4000 divisors; last killed by 1*D0; survivors 0; elapsed 
+520.830
+Chunk 17 checked 5000 divisors; last killed by 1*D0; survivors 0; elapsed 
+521.420
+Chunk 17 checked 6000 divisors; last killed by 1*D0; survivors 0; elapsed 
+530.190
+Divisors tested in chunk 17: 6426
+Surviving translates in this chunk: 0
+SUCCESS: this chunk contains no translate survivor.
+CHUNK_RESULT: SUCCESS
+Finished X1_37_ST_minimal.m.
+Finished chunk 17 at Fri Jun 12 18:17:49 CEST 2026 with status 0

@@ -1,0 +1,50 @@
+======================================================================
+One-time verification
+======================================================================
+Magma V2.29-4     Fri Jun 12 2026 16:53:32 on mordell  [Seed = 2395526245]
+Type ? for help.  Type <Ctrl>-D to quit.
+
+Loading file "verify.m"
+Loading "X1_37_ST_minimal.m"
+Loading "ff_search.m"
+Build X_1(37) over F_2.
+Loading "X1_37_X0plus_map_data.m"
+#S37 coefficients = 18; #T37 coefficients = 18
+Verify S37,T37 from the universal elliptic curve.
+MAP_VERIFICATION: SUCCESS
+Use the quotient image q(S,T)=0.
+ST_RELATION_VERIFICATION: SUCCESS
+#Places(q(S,T)=0,1) = 5
+fiber degrees = [ 36, 36 ]
+DELTA_ORDER: SUCCESS
+Finished X1_37_ST_minimal.m.
+
+Total time: 582.399 seconds, Total memory usage: 529.16MB
+======================================================================
+Running chunks: CORES=24 NCHUNKS=24 LOGDIR=logs_minimal_24worker_20260612_1650
+======================================================================
+chunk 0: NOT SUCCESS -- see logs_minimal_24worker_20260612_1650/chunk_0.log
+chunk 1: NOT SUCCESS -- see logs_minimal_24worker_20260612_1650/chunk_1.log
+chunk 2: NOT SUCCESS -- see logs_minimal_24worker_20260612_1650/chunk_2.log
+chunk 3: NOT SUCCESS -- see logs_minimal_24worker_20260612_1650/chunk_3.log
+chunk 4: NOT SUCCESS -- see logs_minimal_24worker_20260612_1650/chunk_4.log
+chunk 5: NOT SUCCESS -- see logs_minimal_24worker_20260612_1650/chunk_5.log
+chunk 6: NOT SUCCESS -- see logs_minimal_24worker_20260612_1650/chunk_6.log
+chunk 7: NOT SUCCESS -- see logs_minimal_24worker_20260612_1650/chunk_7.log
+chunk 8: NOT SUCCESS -- see logs_minimal_24worker_20260612_1650/chunk_8.log
+chunk 9: NOT SUCCESS -- see logs_minimal_24worker_20260612_1650/chunk_9.log
+chunk 10: NOT SUCCESS -- see logs_minimal_24worker_20260612_1650/chunk_10.log
+chunk 11: NOT SUCCESS -- see logs_minimal_24worker_20260612_1650/chunk_11.log
+chunk 12: NOT SUCCESS -- see logs_minimal_24worker_20260612_1650/chunk_12.log
+chunk 13: NOT SUCCESS -- see logs_minimal_24worker_20260612_1650/chunk_13.log
+chunk 14: NOT SUCCESS -- see logs_minimal_24worker_20260612_1650/chunk_14.log
+chunk 15: NOT SUCCESS -- see logs_minimal_24worker_20260612_1650/chunk_15.log
+chunk 16: NOT SUCCESS -- see logs_minimal_24worker_20260612_1650/chunk_16.log
+chunk 17: NOT SUCCESS -- see logs_minimal_24worker_20260612_1650/chunk_17.log
+chunk 18: NOT SUCCESS -- see logs_minimal_24worker_20260612_1650/chunk_18.log
+chunk 19: NOT SUCCESS -- see logs_minimal_24worker_20260612_1650/chunk_19.log
+chunk 20: NOT SUCCESS -- see logs_minimal_24worker_20260612_1650/chunk_20.log
+chunk 21: NOT SUCCESS -- see logs_minimal_24worker_20260612_1650/chunk_21.log
+chunk 22: NOT SUCCESS -- see logs_minimal_24worker_20260612_1650/chunk_22.log
+chunk 23: NOT SUCCESS -- see logs_minimal_24worker_20260612_1650/chunk_23.log
+GLOBAL_RESULT: INCONCLUSIVE_OR_FAILED
