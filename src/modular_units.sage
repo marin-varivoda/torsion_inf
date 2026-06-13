@@ -1,26 +1,62 @@
 from mdsage import *
 from mdsage.maartens_sage_functions import *
-
-X1_N_with_deg7_function = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 30]
-X1_N_with_deg8_function = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 30, 32, 36]
-X1_N_with_deg9_function = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 30, 36]
-
-for N in X1_N_with_deg7_function:
-    G = Gamma11(1, N)
-    g = G.genus() # maybe compare this with list?
-    print(has_modular_unit_of_degree(G,7, l2_step=2))
-
-for N in X1_N_with_deg8_function:
-    G = Gamma11(1, N)
-    g = G.genus() # maybe compare this with list?
-    print(has_modular_unit_of_degree(G, 8, l2_step=2))
-
-for N in X1_N_with_deg9_function:
-    G = Gamma11(1, N)
-    g = G.genus() # maybe compare this with list?
-    print(has_modular_unit_of_degree(G,9, l2_step=2))
+from sage.all import euler_phi
 
 
+T7 =  [(1, n) for n in list(range(1, 25)) + [26, 27, 28, 30]] \
+    + [(2, 2*n) for n in range(1, 11)]
 
+T8 =  [(1, n) for n in list(range(1, 29)) + [30, 32, 36]] \
+    + [(2, 2*n) for n in range(1, 13)] \
+    + [(3, 3*n) for n in range(1, 5)] \
+    + [(4, 4*n) for n in range(1, 4)] \
+    + [(5, 5), (6, 6)]
 
+T9 =  [(1, n) for n in list(range(1, 29)) + [30, 36]] \
+    + [(2, 2*n) for n in range(1, 13)]
 
+has_func = None
+modular_unit = None
+
+for d, T in [(7, T7), (8, T8), (9, T9)]:
+    print(f"\n===== d={d} =====")
+
+    verified = 0
+    failures = []
+
+    for M, N in T:
+        G = Gamma11(M, N // M)
+        genus = G.genus()
+        target_degree = d // euler_phi(M)
+
+        if (genus == 0):
+            has_func = True
+            modular_unit = None
+
+            print(f"(M,N)=({M:>1},{N:>2})  "
+                  f"Gamma11({M},{N//M:>2})  "
+                  f"g={genus:>2}  "
+                  f"deg={target_degree}  "
+                  f"has_func={has_func}  ")
+
+        else:
+            # We only construct explicit modular unit when genus > 0
+            has_func, modular_unit = has_modular_unit_of_degree(G, target_degree, l2_step=2)
+            print(f"(M,N)=({M:>1},{N:>2})  "
+                  f"Gamma11({M},{N//M:>2})  "
+                  f"g={genus:>2}  "
+                  f"deg={target_degree}  "
+                  f"has_func={has_func}  "
+                  f"modular_unit={modular_unit}")
+
+        if has_func:
+            verified += 1
+        else:
+            failures.append((M, N))
+
+    print(f"\nSummary for d={d}: verified {verified}/{len(T)} pairs.")
+
+    if failures:
+        print(f"Failures for d={d}: {failures}")
+    else:
+        print(f"All pairs verified for d={d}.")
