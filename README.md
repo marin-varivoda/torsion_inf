@@ -24,7 +24,7 @@ Parallel batches like DT computation use the slowest job. Multi-worker Magma job
 
 ## Data Sources and Attribution
 
-To ensure this repository is as self-contained as possbile, we include copies of the necessary data (models for $X_1(N)$, $X_1(M, N)$) and third-party libraries in the `third-party` directory. This keeps the code functional even if the external sources become unavailable.
+To ensure this repository is as self-contained as possible, we include copies of the necessary data (models for $X_1(N)$, $X_1(M, N)$) and third-party libraries in the `third-party` directory. This keeps the code functional even if the external sources become unavailable.
 
 ### Optimized equations for $X_1(M, N)$
 The curve models in the `third_party/DS17_X1MN_models` directory were obtained from the [Optimized equations for X_1(m,mn)](https://math.mit.edu/~drew/X1mn.html) database. 
@@ -61,3 +61,10 @@ These optimized equations $f(x,y)=0$ for $X_1(N)$ are joint work by Andrew V. Su
 
 > **David Zywina**, *Classification of modular curves with low gonality*, ([preprint](https://pi.math.cornell.edu/~zywina/papers/lowgonality.pdf)).
 
+
+### mdsage
+- **Author:** Maarten Derickx
+- **Source Repository:** [koffie/mdsage](https://github.com/koffie/mdsage)
+- **Documentation:** [mdsage documentation](https://koffie.github.io/mdsage/doc/html/)
+
+`mdsage` is a SageMath package for computations with modular forms, modular symbols, and modular curves. It builds on top of SageMath and includes additional functionality not yet available in Sage.
